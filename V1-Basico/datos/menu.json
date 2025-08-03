@@ -1,0 +1,105 @@
+[
+  {
+    "categoria": "Desayunos",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Hamburguesas",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Raciones",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Bocadillos y Montados",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Ensaladas",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Sandwitches",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Helados",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Promociones",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Bebidas",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"},
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", "precio": "0,00€"}
+    ]
+  },
+  {
+    "categoria": "Contacto",
+    "productos": []
+  }
+]
