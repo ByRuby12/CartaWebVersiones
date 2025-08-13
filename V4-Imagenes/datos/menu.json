@@ -1,0 +1,154 @@
+[
+  {
+    "categoria": "Desayunos",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] }
+    ]
+  },
+  {
+    "categoria": "Hamburguesas",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] }
+    ]
+  },
+  {
+    "categoria": "Raciones",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] }
+    ]
+  },
+  {
+    "categoria": "Bocadillos",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] }
+    ]
+  },
+  {
+    "categoria": "Ensaladas",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] }
+    ]
+  },
+  {
+    "categoria": "Sandwitches",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] }
+    ]
+  },
+  {
+    "categoria": "Helados",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] }
+    ]
+  },
+  {
+    "categoria": "Promociones",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] }
+    ]
+  },
+  {
+    "categoria": "Bebidas",
+    "productos": [
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Producto de Prueba", "descripcion": "Este es un producto de ejemplo para pruebas. Incluye alérgenos de muestra.", 
+      "precio": "0,00€","alergenos": ["gluten", "lacteos", "soja", "huevos", "sesamo"] },
+      {"nombre": "Imagen 1", "descripcion": "Descripción de la imagen 1", "url": "imagenes/imagen1.png"}
+    ]
+  },
+  {
+    "categoria": "Galería",
+    "productos": [ 
+      {"nombre": "Imagen 1", "descripcion": "Descripción de la imagen 1", "url": "imagenes/imagen1.png"},
+      {"nombre": "Imagen 1", "descripcion": "Descripción de la imagen 1", "url": "imagenes/imagen1.png"},
+      {"nombre": "Imagen 2", "descripcion": "Descripción de la imagen 2", "url": "imagenes/imagen1.png"},
+      {"nombre": "Imagen 2", "descripcion": "Descripción de la imagen 2", "url": "imagenes/imagen1.png"},
+      {"nombre": "Imagen 3", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen1.png"},
+      {"nombre": "Imagen 3", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen1.png"}
+
+    ]
+  },
+  {
+    "categoria": "Contacto",
+    "productos": []
+  }
+]
