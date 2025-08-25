@@ -14,7 +14,7 @@
   "footerDerechos": "Copyright ©{year} Derechos reservados para {bar}",
   "desarrollador": "Diseñado y desarrollado por ByRuby12 - V4.0.0",
   "redes": {
-    "twitter": "#1",
+    "twitter": "#",
     "tiktok": "#1",
     "youtube": "#1",
     "instagram": "#1",
@@ -142,4 +142,5 @@
   "color-galeria-modal-bg":  "#000000D9",
   "color-galeria-modal-contador-bg": "#00000073"
   }
+
 }
