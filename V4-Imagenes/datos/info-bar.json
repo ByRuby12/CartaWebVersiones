@@ -14,7 +14,7 @@
   "footerDerechos": "Copyright ©{year} Derechos reservados para {bar}",
   "desarrollador": "Diseñado y desarrollado por ByRuby12 - V4.0.0",
   "redes": {
-    "twitter": "#",
+    "twitter": "",
     "tiktok": "#1",
     "youtube": "#1",
     "instagram": "#1",
@@ -144,3 +144,4 @@
   }
 
 }
+
