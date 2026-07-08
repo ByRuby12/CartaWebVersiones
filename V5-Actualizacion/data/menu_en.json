@@ -4,374 +4,374 @@
       "identificador": "caf-s-infusiones",
       "nombre": "Coffee & Infusions",
       "productos": [
-        {"nombre": "Coffee black", "descripcion": "Coffee espresso intenso servido sin leche.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee black with ice", "descripcion": "Coffee espresso acompañado de hielo, ideal para refrescar.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee americano", "descripcion": "Coffee suave y ligero con más cantidad de agua.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee with milk", "descripcion": "Coffee espresso mezclado with milk caliente.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee corcakedo", "descripcion": "Coffee espresso con un toque de leche.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee expreso", "descripcion": "Coffee concentrado de sabor fuerte y aroma intenso.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee macchiato", "descripcion": "Coffee con un ligero toque de leche.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Decaf sobre", "descripcion": "Coffee decaf inscakentáneo servido al momento.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Decaf with milk", "descripcion": "Coffee decaf acompañado de leche caliente.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Decaf corcakedo", "descripcion": "Coffee decaf con un pequeño toque de leche.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Decaf macchiato", "descripcion": "Decaf con un toque ligero de leche.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Decaf black", "descripcion": "Coffee decaf sin leche, sabor suave.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Decaf black with ice", "descripcion": "Coffee decaf acompañado de hielo.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Colacao", "descripcion": "Bebida caliente de cacao with milk.", "precio": "2.00", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Capuccino", "descripcion": "Coffee with milk espumada y cacao en polvo.", "precio": "3.90", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Bombón", "descripcion": "Coffee espresso servido with milk condensada.", "precio": "2.10", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Carajillo", "descripcion": "Coffee espresso combinado con un licor, tradicionalmente brandy o ron.", "precio": "2.60", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Hot chocolate", "descripcion": "Hot chocolate espeso servido with milk.", "precio": "3.00", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee double shot", "descripcion": "Coffee espresso con doble cantidad de coffee para un sabor más intenso.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee Irish", "descripcion": "Coffee caliente con whisky, azúcar y crema.", "precio": "3.90", "alergenos": ["lacteos", "sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coffee Viennese", "descripcion": "Coffee espresso coronado con cream moncakeda.", "precio": "3.90", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Glass of milk", "descripcion": "Glass of milk caliente o fría.", "precio": "1.30", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Various herbal teas", "descripcion": "Variedad de infusiones naturales para disfrucaker en cualquier momento.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Double infusion", "descripcion": "Infusión de mayor intensidad preparada con double shot.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Coffee black", "descripcion": "Coffee espresso intenso servido sin leche.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee black with ice", "descripcion": "Coffee espresso acompañado de hielo, ideal para refrescar.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee americano", "descripcion": "Coffee suave y ligero con más cantidad de agua.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee with milk", "descripcion": "Coffee espresso mezclado with milk caliente.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee corcakedo", "descripcion": "Coffee espresso con un toque de leche.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee expreso", "descripcion": "Coffee concentrado de sabor fuerte y aroma intenso.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee macchiato", "descripcion": "Coffee con un ligero toque de leche.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Decaf sobre", "descripcion": "Coffee decaf inscakentáneo servido al momento.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Decaf with milk", "descripcion": "Coffee decaf acompañado de leche caliente.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Decaf corcakedo", "descripcion": "Coffee decaf con un pequeño toque de leche.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Decaf macchiato", "descripcion": "Decaf con un toque ligero de leche.", "precio": "1.90", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Decaf black", "descripcion": "Coffee decaf sin leche, sabor suave.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Decaf black with ice", "descripcion": "Coffee decaf acompañado de hielo.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Colacao", "descripcion": "Bebida caliente de cacao with milk.", "precio": "2.00", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Capuccino", "descripcion": "Coffee with milk espumada y cacao en polvo.", "precio": "3.90", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Bombón", "descripcion": "Coffee espresso servido with milk condensada.", "precio": "2.10", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Carajillo", "descripcion": "Coffee espresso combinado con un licor, tradicionalmente brandy o ron.", "precio": "2.60", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Hot chocolate", "descripcion": "Hot chocolate espeso servido with milk.", "precio": "3.00", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee double shot", "descripcion": "Coffee espresso con doble cantidad de coffee para un sabor más intenso.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee Irish", "descripcion": "Coffee caliente con whisky, azúcar y crema.", "precio": "3.90", "alergenos": ["lacteos", "sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coffee Viennese", "descripcion": "Coffee espresso coronado con cream moncakeda.", "precio": "3.90", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Glass of milk", "descripcion": "Glass of milk caliente o fría.", "precio": "1.30", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Various herbal teas", "descripcion": "Variedad de infusiones naturales para disfrucaker en cualquier momento.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Double infusion", "descripcion": "Infusión de mayor intensidad preparada con double shot.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "oferta-desayuno-caf-l-v-8-a-12",
       "nombre": "Breakfast + Coffee Offer | Mon-Fri 8 to 12",
       "productos": [
-        {"nombre": "Mollete with tomato and olive oil", "descripcion": "Pan mollete toastdo con tomate natural y aceite de oliva. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flauta with tomato and olive oil", "descripcion": "Flaucake crujiente con tomate triturado y aceite. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake whole grain con tomate y aceite", "descripcion": "Flaucake whole grain con tomate natural y aceite. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.60", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mollete con butter and jam", "descripcion": "Mollete toastdo con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake con butter and jam", "descripcion": "Flaucake toastda con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake whole grain con butter and jam", "descripcion": "Flaucake whole grain con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.60", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake con tomate y Iberian ham", "descripcion": "Flaucake con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake bacon con cheese", "descripcion": "Flaucake con bacon a la plancha y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake whole grain con tomate y Iberian ham", "descripcion": "Flaucake whole grain con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.70", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake whole grain bacon con cheese", "descripcion": "Flaucake whole grain con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.70", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mollete con tomate y Iberian ham", "descripcion": "Mollete con tomate natural y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mollete bacon con cheese", "descripcion": "Mollete con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Sponge cake de chocolate", "descripcion": "Sponge cake casero sabor chocolate. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.10", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Sponge cake de zanahoria", "descripcion": "Sponge cake suave de zanahoria con especias. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.10", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Toastda de molde con butter and jam", "descripcion": "Pan de molde toastdo con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Croissant a la plancha", "descripcion": "Croissant caliente y ligeramente toastdo. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.60", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Croissant mixto", "descripcion": "Croissant relleno de jamón york y cheese. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Spanish omelette slice", "descripcion": "Clásico Spanish omelette slice española. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.40", "alergenos": ["huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "French omelette (3 eggs)", "descripcion": "French omelette elaborada con tres eggs. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.40", "alergenos": ["huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mixed sandwich", "descripcion": "Sándwich de jamón york y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Pancakes con cream y syrup", "descripcion": "Pancakes esponjosas con cream y syrup (chocolate, caramelo o fresa). Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "5.20", "alergenos": ["gluten", "lacteos", "huevos", "soja"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Pastries: donuts o chocolate pastry", "descripcion": "Selección de pastries clásica del día. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten", "lacteos", "huevos", "soja"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Mollete with tomato and olive oil", "descripcion": "Pan mollete toastdo con tomate natural y aceite de oliva. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flauta with tomato and olive oil", "descripcion": "Flaucake crujiente con tomate triturado y aceite. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake whole grain con tomate y aceite", "descripcion": "Flaucake whole grain con tomate natural y aceite. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.60", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mollete con butter and jam", "descripcion": "Mollete toastdo con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake con butter and jam", "descripcion": "Flaucake toastda con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake whole grain con butter and jam", "descripcion": "Flaucake whole grain con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.60", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake con tomate y Iberian ham", "descripcion": "Flaucake con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake bacon con cheese", "descripcion": "Flaucake con bacon a la plancha y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake whole grain con tomate y Iberian ham", "descripcion": "Flaucake whole grain con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.70", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake whole grain bacon con cheese", "descripcion": "Flaucake whole grain con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.70", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mollete con tomate y Iberian ham", "descripcion": "Mollete con tomate natural y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mollete bacon con cheese", "descripcion": "Mollete con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Sponge cake de chocolate", "descripcion": "Sponge cake casero sabor chocolate. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.10", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Sponge cake de zanahoria", "descripcion": "Sponge cake suave de zanahoria con especias. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.10", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Toastda de molde con butter and jam", "descripcion": "Pan de molde toastdo con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Croissant a la plancha", "descripcion": "Croissant caliente y ligeramente toastdo. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.60", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Croissant mixto", "descripcion": "Croissant relleno de jamón york y cheese. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Spanish omelette slice", "descripcion": "Clásico Spanish omelette slice española. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.40", "alergenos": ["huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "French omelette (3 eggs)", "descripcion": "French omelette elaborada con tres eggs. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.40", "alergenos": ["huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mixed sandwich", "descripcion": "Sándwich de jamón york y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.60", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Pancakes con cream y syrup", "descripcion": "Pancakes esponjosas con cream y syrup (chocolate, caramelo o fresa). Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "5.20", "alergenos": ["gluten", "lacteos", "huevos", "soja"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Pastries: donuts o chocolate pastry", "descripcion": "Selección de pastries clásica del día. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten", "lacteos", "huevos", "soja"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "desayunos-sin-oferta",
       "nombre": "Breakfast Without Offer",
       "productos": [
-        {"nombre": "Mollete with tomato and olive oil", "descripcion": "Mollete with tomato and olive oil. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.20", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flauta with tomato and olive oil", "descripcion": "Flaucake with tomato and olive oil. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.20", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake whole grain con tomate y aceite", "descripcion": "Flaucake whole grain con tomate y aceite. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.30", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mollete con butter and jam", "descripcion": "Mollete con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.20", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake con butter and jam", "descripcion": "Flaucake con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.20", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake whole grain con butter and jam", "descripcion": "Flaucake whole grain con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.30", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake con tomate y Iberian ham", "descripcion": "Flaucake con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake bacon con cheese", "descripcion": "Flaucake con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake whole grain con tomate y Iberian ham", "descripcion": "Flaucake whole grain con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.40", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Flaucake whole grain bacon con cheese", "descripcion": "Flaucake whole grain con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.40", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mollete con tomate y Iberian ham", "descripcion": "Mollete con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mollete bacon con cheese", "descripcion": "Mollete con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Sponge cake de chocolate", "descripcion": "Sponge cake de chocolate. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.00", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Sponge cake de zanahoria", "descripcion": "Sponge cake de zanahoria. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.00", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Toastda de molde con butter and jam", "descripcion": "Toastda de molde con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.10", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Croissant simple", "descripcion": "Croissant simple, ligero y hojaldrado. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.00", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Croissant plancha", "descripcion": "Croissant toastdo a la plancha. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.30", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Croissant mixto", "descripcion": "Croissant relleno de jamón y cheese. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.00", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Spanish omelette slice", "descripcion": "Spanish omelette slice española. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "French omelette (2 eggs)", "descripcion": "French omelette con 2 eggs. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mixed sandwich", "descripcion": "Mixed sandwich clásico. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.20", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mixed sandwich con egg", "descripcion": "Mixed sandwich con egg extra. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.00", "alergenos": ["gluten", "lacteos", "huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mixed sandwich vegecakel", "descripcion": "Mixed sandwich con verduras. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "5.10", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Pancakes con cream y syrup", "descripcion": "Pancakes con cream y syrup de chocolate, caramelo o fresa. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.20", "alergenos": ["gluten", "lacteos", "huevos", "soja"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Pastries: donuts o chocolate pastry", "descripcion": "Donuts o chocolate pastry/azúcar. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "1.80", "alergenos": ["gluten", "lacteos", "huevos", "soja"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Mollete with tomato and olive oil", "descripcion": "Mollete with tomato and olive oil. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.20", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flauta with tomato and olive oil", "descripcion": "Flaucake with tomato and olive oil. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.20", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake whole grain con tomate y aceite", "descripcion": "Flaucake whole grain con tomate y aceite. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.30", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mollete con butter and jam", "descripcion": "Mollete con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.20", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake con butter and jam", "descripcion": "Flaucake con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.20", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake whole grain con butter and jam", "descripcion": "Flaucake whole grain con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.30", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake con tomate y Iberian ham", "descripcion": "Flaucake con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake bacon con cheese", "descripcion": "Flaucake con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake whole grain con tomate y Iberian ham", "descripcion": "Flaucake whole grain con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.40", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Flaucake whole grain bacon con cheese", "descripcion": "Flaucake whole grain con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.40", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mollete con tomate y Iberian ham", "descripcion": "Mollete con tomate y Iberian ham. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mollete bacon con cheese", "descripcion": "Mollete con bacon y cheese fundido. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.30", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Sponge cake de chocolate", "descripcion": "Sponge cake de chocolate. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.00", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Sponge cake de zanahoria", "descripcion": "Sponge cake de zanahoria. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.00", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Toastda de molde con butter and jam", "descripcion": "Toastda de molde con butter and jam. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.10", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Croissant simple", "descripcion": "Croissant simple, ligero y hojaldrado. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.00", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Croissant plancha", "descripcion": "Croissant toastdo a la plancha. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "2.30", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Croissant mixto", "descripcion": "Croissant relleno de jamón y cheese. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.00", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Spanish omelette slice", "descripcion": "Spanish omelette slice española. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "French omelette (2 eggs)", "descripcion": "French omelette con 2 eggs. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.50", "alergenos": ["huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mixed sandwich", "descripcion": "Mixed sandwich clásico. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "3.20", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mixed sandwich con egg", "descripcion": "Mixed sandwich con egg extra. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.00", "alergenos": ["gluten", "lacteos", "huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mixed sandwich vegecakel", "descripcion": "Mixed sandwich con verduras. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "5.10", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Pancakes con cream y syrup", "descripcion": "Pancakes con cream y syrup de chocolate, caramelo o fresa. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "4.20", "alergenos": ["gluten", "lacteos", "huevos", "soja"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Pastries: donuts o chocolate pastry", "descripcion": "Donuts o chocolate pastry/azúcar. Extras disponibles: bacon, york, cheese (+1€), jamón ibérico (+1,3€) egg (+1,2€).", "precio": "1.80", "alergenos": ["gluten", "lacteos", "huevos", "soja"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "picoteo",
       "nombre": "Snacks",
       "productos": [
-        {"nombre": "Homemade ham croquettes", "descripcion": "Homemade ham croquettes.", "precio": "12.40", "alergenos": ["gluten", "lacteos", "huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Brava-alioli with chicken", "descripcion": "Pacakecakes bravas con alioli y pollo.", "precio": "12.80", "alergenos": ["lacteos", "huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Brava-alioli", "descripcion": "Pacakecakes bravas con alioli.", "precio": "9.90", "alergenos": ["lacteos", "huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Grilled pork ear", "descripcion": "Oreja de cerdo a la plancha.", "precio": "12.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Nachos 'Bohio'", "descripcion": "Nachos con cheddar, carne de ternera picada, pico de gallo, jalapeños, guacamole y crema agria.", "precio": "14.00", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Chicken fingers con salsa de moscakeza", "descripcion": "Pollo empanado con salsa de moscakeza.", "precio": "12.50", "alergenos": ["gluten", "huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Chicken wings in american sauce", "descripcion": "Chicken wings in American sauce.", "precio": "9.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Homemade ham croquettes", "descripcion": "Homemade ham croquettes.", "precio": "12.40", "alergenos": ["gluten", "lacteos", "huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Brava-alioli with chicken", "descripcion": "Pacakecakes bravas con alioli y pollo.", "precio": "12.80", "alergenos": ["lacteos", "huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Brava-alioli", "descripcion": "Pacakecakes bravas con alioli.", "precio": "9.90", "alergenos": ["lacteos", "huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Grilled pork ear", "descripcion": "Oreja de cerdo a la plancha.", "precio": "12.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Nachos 'Bohio'", "descripcion": "Nachos con cheddar, carne de ternera picada, pico de gallo, jalapeños, guacamole y crema agria.", "precio": "14.00", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Chicken fingers con salsa de moscakeza", "descripcion": "Pollo empanado con salsa de moscakeza.", "precio": "12.50", "alergenos": ["gluten", "huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Chicken wings in american sauce", "descripcion": "Chicken wings in American sauce.", "precio": "9.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "del-mar",
       "nombre": "From the Sea",
       "productos": [
-        {"nombre": "Roman-style squid", "descripcion": "Calamares rebozados.", "precio": "11.50", "alergenos": ["gluten", "huevos", "crustaceos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Sautéed baby squid sobre cebolla caramelizada y alioli negro, decorado con tina de calamar y ajonesa", "descripcion": "Sautéed baby squid con alioli negro.", "precio": "17.60", "alergenos": ["crustaceos", "huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Malaga-style fried seafood (Bienmesabe, Chopitos, Calamares, Boquerones)", "descripcion": "Fritura de pescado y marisco.", "precio": "18.50", "alergenos": ["gluten", "crustaceos", "huevos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Roman-style squid", "descripcion": "Calamares rebozados.", "precio": "11.50", "alergenos": ["gluten", "huevos", "crustaceos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Sautéed baby squid sobre cebolla caramelizada y alioli negro, decorado con tina de calamar y ajonesa", "descripcion": "Sautéed baby squid con alioli negro.", "precio": "17.60", "alergenos": ["crustaceos", "huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Malaga-style fried seafood (Bienmesabe, Chopitos, Calamares, Boquerones)", "descripcion": "Fritura de pescado y marisco.", "precio": "18.50", "alergenos": ["gluten", "crustaceos", "huevos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "huevos-rotos",
       "nombre": "Broken Eggs",
       "productos": [
-        {"nombre": "Broken eggs con jamón", "descripcion": "Eggs rotos con jamón ibérico.", "precio": "13.50", "alergenos": ["huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Broken eggs con morcilla", "descripcion": "Eggs rotos con morcilla.", "precio": "13.50", "alergenos": ["huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Broken eggs con bacon crujiente y crema camembert", "descripcion": "Eggs rotos con bacon y crema camembert.", "precio": "13.50", "alergenos": ["huevos", "lacteos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Broken eggs con jamón", "descripcion": "Eggs rotos con jamón ibérico.", "precio": "13.50", "alergenos": ["huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Broken eggs con morcilla", "descripcion": "Eggs rotos con morcilla.", "precio": "13.50", "alergenos": ["huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Broken eggs con bacon crujiente y crema camembert", "descripcion": "Eggs rotos con bacon y crema camembert.", "precio": "13.50", "alergenos": ["huevos", "lacteos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "tostas",
       "nombre": "Toasts",
       "productos": [
-        {"nombre": "Toast de jamón con pan tumaca", "descripcion": "Toast con jamón y pan tumaca.", "precio": "8.90", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Toast gambas y gulas con alioli", "descripcion": "Toast con gambas y gulas.", "precio": "8.90", "alergenos": ["gluten", "crustaceos", "huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Toast de cheese de cabra con cebolla conficakeda", "descripcion": "Toast con cheese de cabra y cebolla conficakeda.", "precio": "8.90", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Toast sirloin ibérico con cebolla conficakeda y reducción de PX", "descripcion": "Toast con sirloin ibérico y reducción de PX.", "precio": "8.90", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Toast sirloin ibérico con cheese brie y reducción de PX", "descripcion": "Toast con sirloin ibérico, cheese brie y reducción de PX.", "precio": "8.90", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Toast de jamón con pan tumaca", "descripcion": "Toast con jamón y pan tumaca.", "precio": "8.90", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Toast gambas y gulas con alioli", "descripcion": "Toast con gambas y gulas.", "precio": "8.90", "alergenos": ["gluten", "crustaceos", "huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Toast de cheese de cabra con cebolla conficakeda", "descripcion": "Toast con cheese de cabra y cebolla conficakeda.", "precio": "8.90", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Toast sirloin ibérico con cebolla conficakeda y reducción de PX", "descripcion": "Toast con sirloin ibérico y reducción de PX.", "precio": "8.90", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Toast sirloin ibérico con cheese brie y reducción de PX", "descripcion": "Toast con sirloin ibérico, cheese brie y reducción de PX.", "precio": "8.90", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "carnes",
       "nombre": "Meats",
       "productos": [
-        {"nombre": "Cakecos de sirloin de cerdo, rúcula, cebolla morada y adobo Tennessee (3 unidades)", "descripcion": "Cakecos de sirloin de cerdo con rúcula y cebolla.", "precio": "13.50", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Lomo bajo de vaca (500) trinchado y acompañado de pacakecakes", "descripcion": "Lomo bajo de vaca trinchado con pacakecakes.", "precio": "28.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Cakecos de sirloin de cerdo, rúcula, cebolla morada y adobo Tennessee (3 unidades)", "descripcion": "Cakecos de sirloin de cerdo con rúcula y cebolla.", "precio": "13.50", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Lomo bajo de vaca (500) trinchado y acompañado de pacakecakes", "descripcion": "Lomo bajo de vaca trinchado con pacakecakes.", "precio": "28.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "hamburguesas",
       "nombre": "Burgers",
       "productos": [
-        {"nombre": "Burguer de carne de vaca, pan brioche negro, bacon, pepinillo y cheese chedda", "descripcion": "Hamburguesa de carne de vaca con cheese cheddar y bacon.", "precio": "12.50", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Burguer de pollo picado, pan brioche negro, bacon y cheese cheddar", "descripcion": "Hamburguesa de pollo con cheese cheddar y bacon.", "precio": "11.50", "alergenos": ["gluten", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mini hamburguesas de ternera con pan de colores (4 unidades)", "descripcion": "Cuatro mini hamburguesas elaboradas con ternera, jugosas y llenas de sabor.", "precio": "11.20", "alergenos": ["gluten"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Burguer de carne de vaca, pan brioche negro, bacon, pepinillo y cheese chedda", "descripcion": "Hamburguesa de carne de vaca con cheese cheddar y bacon.", "precio": "12.50", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Burguer de pollo picado, pan brioche negro, bacon y cheese cheddar", "descripcion": "Hamburguesa de pollo con cheese cheddar y bacon.", "precio": "11.50", "alergenos": ["gluten", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mini hamburguesas de ternera con pan de colores (4 unidades)", "descripcion": "Cuatro mini hamburguesas elaboradas con ternera, jugosas y llenas de sabor.", "precio": "11.20", "alergenos": ["gluten"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "guarniciones-y-salsas",
       "nombre": "Sides & Sauces",
       "productos": [
-        {"nombre": "Pacakecakes fricakes", "descripcion": "Pacakecakes fricakes clásicas.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Pacakecake de gajo", "descripcion": "Pacakecakes de gajo.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Pacakecakes fricakes", "descripcion": "Pacakecakes fricakes clásicas.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Pacakecake de gajo", "descripcion": "Pacakecakes de gajo.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "ensaladas",
       "nombre": "Salads",
       "productos": [
-        {"nombre": "Russian salad", "descripcion": "Ensaladilla con mayonesa.", "precio": "9.60", "alergenos": ["huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Ensalada de cheese de cabra con cebolla caramelizada y salsa Modena", "descripcion": "Ensalada con cheese de cabra y salsa Modena.", "precio": "12.50", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tuna belly con tomate rosa y cebolla", "descripcion": "Ensalada con tuna belly, tomate y cebolla.", "precio": "13.90", "alergenos": ["pescado"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Caesar salad 'Estilo Bohio'", "descripcion": "Caesar salad.", "precio": "12.50", "alergenos": ["huevos", "pescado", "lacteos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Russian salad", "descripcion": "Ensaladilla con mayonesa.", "precio": "9.60", "alergenos": ["huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Ensalada de cheese de cabra con cebolla caramelizada y salsa Modena", "descripcion": "Ensalada con cheese de cabra y salsa Modena.", "precio": "12.50", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tuna belly con tomate rosa y cebolla", "descripcion": "Ensalada con tuna belly, tomate y cebolla.", "precio": "13.90", "alergenos": ["pescado"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Caesar salad 'Estilo Bohio'", "descripcion": "Caesar salad.", "precio": "12.50", "alergenos": ["huevos", "pescado", "lacteos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "verduritas",
       "nombre": "Vegetables",
       "productos": [
-        {"nombre": "Artichoke flower con jamón crujiente y mousse de pato", "descripcion": "Artichoke flower con jamón y mousse de pato.", "precio": "5.00", "alergenos": ["lacteos", "huevos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Eggplant sticks fresca en tempura", "descripcion": "Berenjena en tempura", "precio": "13.50", "alergenos": ["gluten", "huevos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Artichoke flower con jamón crujiente y mousse de pato", "descripcion": "Artichoke flower con jamón y mousse de pato.", "precio": "5.00", "alergenos": ["lacteos", "huevos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Eggplant sticks fresca en tempura", "descripcion": "Berenjena en tempura", "precio": "13.50", "alergenos": ["gluten", "huevos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "postres",
       "nombre": "Desserts",
       "productos": [
-        {"nombre": "Chocolate death cake", "descripcion": "Cakercake de chocolate.", "precio": "6.50", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "New york-style cheesecake", "descripcion": "Cakercake de cheese estilo Nueva York.", "precio": "6.50", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Homemade walnut brownie con helado", "descripcion": "Brownie con nueces y helado.", "precio": "6.50", "alergenos": ["gluten", "huevos", "lacteos", "frutos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Chocolate death cake", "descripcion": "Cakercake de chocolate.", "precio": "6.50", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "New york-style cheesecake", "descripcion": "Cakercake de cheese estilo Nueva York.", "precio": "6.50", "alergenos": ["gluten", "huevos", "lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Homemade walnut brownie con helado", "descripcion": "Brownie con nueces y helado.", "precio": "6.50", "alergenos": ["gluten", "huevos", "lacteos", "frutos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "refrescos-y-otras-bebidas",
       "nombre": "Soft Drinks & Other Drinks",
       "productos": [
-        {"nombre": "Coca cola", "descripcion": "Refresco clásico.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coca Cola Zero", "descripcion": "Refresco sin azúcar.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Coca Cola Zero Zero", "descripcion": "Refresco sin azúcar y sin coffeeína.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Fanta orange", "descripcion": "Refresco de naranja.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Fanta lemon", "descripcion": "Refresco de limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Aquarius lemon", "descripcion": "Bebida isotónica sabor limón.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Aquarius orange", "descripcion": "Bebida isotónica sabor naranja.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Fuze Tea Limón", "descripcion": "Té frío sabor limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Fuze Tea Maracuyá", "descripcion": "Té frío sabor maracuyá.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Casera", "descripcion": "Refresco de soda.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Schweppes lemon", "descripcion": "Bebida tónica sabor limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Schweppes orange", "descripcion": "Bebida tónica sabor naranja.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Sprite", "descripcion": "Refresco de lima-limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Bitter kas", "descripcion": "Refresco con sabor amargo.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Red Bull", "descripcion": "Bebida energética.", "precio": "3.10", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tónica Hibiscus", "descripcion": "Agua tónica con hibiscus.", "precio": "3.60", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tónica Schweppes", "descripcion": "Agua tónica clásica.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Young grape juice", "descripcion": "Bebida dulce de uva.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tomato juice", "descripcion": "Zumo natural de tomate.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Pineapple juice", "descripcion": "Zumo natural de piña.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Peach juice", "descripcion": "Zumo natural de melocotón.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Orange juice", "descripcion": "Zumo natural de naranja.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Summer wine con limón", "descripcion": "Bebida refrescante con vino y limón.", "precio": "3.50", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Summer wine con casera", "descripcion": "Bebida refrescante con vino y gaseosa.", "precio": "3.50", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Sparkling water", "descripcion": "Agua mineral carbocreamda.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "1/2 liter water", "descripcion": "Agua mineral natural.", "precio": "2.10", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Orange juice natural", "descripcion": "Orange juice recién exprimido.", "precio": "2.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Ginger ale", "descripcion": "Refresco de jengibre.", "precio": "3.10", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Coca cola", "descripcion": "Refresco clásico.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coca Cola Zero", "descripcion": "Refresco sin azúcar.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Coca Cola Zero Zero", "descripcion": "Refresco sin azúcar y sin coffeeína.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Fanta orange", "descripcion": "Refresco de naranja.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Fanta lemon", "descripcion": "Refresco de limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Aquarius lemon", "descripcion": "Bebida isotónica sabor limón.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Aquarius orange", "descripcion": "Bebida isotónica sabor naranja.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Fuze Tea Limón", "descripcion": "Té frío sabor limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Fuze Tea Maracuyá", "descripcion": "Té frío sabor maracuyá.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Casera", "descripcion": "Refresco de soda.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Schweppes lemon", "descripcion": "Bebida tónica sabor limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Schweppes orange", "descripcion": "Bebida tónica sabor naranja.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Sprite", "descripcion": "Refresco de lima-limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Bitter kas", "descripcion": "Refresco con sabor amargo.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Red Bull", "descripcion": "Bebida energética.", "precio": "3.10", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tónica Hibiscus", "descripcion": "Agua tónica con hibiscus.", "precio": "3.60", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tónica Schweppes", "descripcion": "Agua tónica clásica.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Young grape juice", "descripcion": "Bebida dulce de uva.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tomato juice", "descripcion": "Zumo natural de tomate.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Pineapple juice", "descripcion": "Zumo natural de piña.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Peach juice", "descripcion": "Zumo natural de melocotón.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Orange juice", "descripcion": "Zumo natural de naranja.", "precio": "2.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Summer wine con limón", "descripcion": "Bebida refrescante con vino y limón.", "precio": "3.50", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Summer wine con casera", "descripcion": "Bebida refrescante con vino y gaseosa.", "precio": "3.50", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Sparkling water", "descripcion": "Agua mineral carbocreamda.", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "1/2 liter water", "descripcion": "Agua mineral natural.", "precio": "2.10", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Orange juice natural", "descripcion": "Orange juice recién exprimido.", "precio": "2.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Ginger ale", "descripcion": "Refresco de jengibre.", "precio": "3.10", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "cervezas",
       "nombre": "Beers",
       "productos": [
-        {"nombre": "Caña de Cerveza Estrella", "descripcion": "Caña de cerveza Estrella, fresca y tradicional.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Doble Cerveza Estrella", "descripcion": "Doble ración de cerveza Estrella.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Doble Limón Estrella", "descripcion": "Cerveza Estrella con un toque de limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Doble Casera Estrella", "descripcion": "Cerveza Estrella mezclada con gaseosa (Casera).", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jarra Cerveza Estrella", "descripcion": "Jarra grande de cerveza Estrella.", "precio": "4.10", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jarra Limón Estrella", "descripcion": "Jarra de cerveza Estrella con limón.", "precio": "4.10", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jarra Casera Estrella", "descripcion": "Jarra de cerveza Estrella con gaseosa (Casera).", "precio": "4.10", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Caña de Cerveza Estrella 1906", "descripcion": "Caña de cerveza Estrella 1906, sabor intenso.", "precio": "2.20", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Doble Cerveza Estrella 1906", "descripcion": "Doble ración de cerveza Estrella 1906.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Doble Limón Estrella 1906", "descripcion": "Cerveza Estrella 1906 con un toque de limón.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Doble Casera Estrella 1906", "descripcion": "Cerveza Estrella 1906 mezclada con gaseosa (Casera).", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jarra Cerveza Estrella 1906", "descripcion": "Jarra grande de cerveza Estrella 1906.", "precio": "4.60", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jarra Limón Estrella 1906", "descripcion": "Jarra de cerveza Estrella 1906 con limón.", "precio": "4.60", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jarra Casera Estrella 1906", "descripcion": "Jarra de cerveza Estrella 1906 con gaseosa (Casera).", "precio": "4.60", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Caña de Cerveza Estrella", "descripcion": "Caña de cerveza Estrella, fresca y tradicional.", "precio": "1.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Doble Cerveza Estrella", "descripcion": "Doble ración de cerveza Estrella.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Doble Limón Estrella", "descripcion": "Cerveza Estrella con un toque de limón.", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Doble Casera Estrella", "descripcion": "Cerveza Estrella mezclada con gaseosa (Casera).", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jarra Cerveza Estrella", "descripcion": "Jarra grande de cerveza Estrella.", "precio": "4.10", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jarra Limón Estrella", "descripcion": "Jarra de cerveza Estrella con limón.", "precio": "4.10", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jarra Casera Estrella", "descripcion": "Jarra de cerveza Estrella con gaseosa (Casera).", "precio": "4.10", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Caña de Cerveza Estrella 1906", "descripcion": "Caña de cerveza Estrella 1906, sabor intenso.", "precio": "2.20", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Doble Cerveza Estrella 1906", "descripcion": "Doble ración de cerveza Estrella 1906.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Doble Limón Estrella 1906", "descripcion": "Cerveza Estrella 1906 con un toque de limón.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Doble Casera Estrella 1906", "descripcion": "Cerveza Estrella 1906 mezclada con gaseosa (Casera).", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jarra Cerveza Estrella 1906", "descripcion": "Jarra grande de cerveza Estrella 1906.", "precio": "4.60", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jarra Limón Estrella 1906", "descripcion": "Jarra de cerveza Estrella 1906 con limón.", "precio": "4.60", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jarra Casera Estrella 1906", "descripcion": "Jarra de cerveza Estrella 1906 con gaseosa (Casera).", "precio": "4.60", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "tercios",
       "nombre": "330ml Beers",
       "productos": [
-        {"nombre": "Tercio Alhambra 1925", "descripcion": "Botella de cerveza Alhambra 1925, sabor intenso y característico.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tercio Estrella 0,0 toastda", "descripcion": "Cerveza Estrella 0,0 toastda sin alcohol, con cuerpo y sabor suave.", "precio": "2.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tercio Estrella sin Alcohol", "descripcion": "Cerveza Estrella sin alcohol, refrescante y ligera.", "precio": "2.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tercio Mahou 5 Estrellas", "descripcion": "Cerveza Mahou 5 Estrellas, sabor equilibrado y clásico.", "precio": "2.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tercio Radler", "descripcion": "Cerveza Radler, mezcla de cerveza con limón refrescante.", "precio": "2.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Tercio Heineken", "descripcion": "Cerveza Heineken en botella de 33cl, sabor suave y reconocible.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Barrica de Mahou", "descripcion": "Cerveza Mahou en barrica, sabor equilibrado y fresco.", "precio": "4.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Tercio Alhambra 1925", "descripcion": "Botella de cerveza Alhambra 1925, sabor intenso y característico.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tercio Estrella 0,0 toastda", "descripcion": "Cerveza Estrella 0,0 toastda sin alcohol, con cuerpo y sabor suave.", "precio": "2.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tercio Estrella sin Alcohol", "descripcion": "Cerveza Estrella sin alcohol, refrescante y ligera.", "precio": "2.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tercio Mahou 5 Estrellas", "descripcion": "Cerveza Mahou 5 Estrellas, sabor equilibrado y clásico.", "precio": "2.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tercio Radler", "descripcion": "Cerveza Radler, mezcla de cerveza con limón refrescante.", "precio": "2.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Tercio Heineken", "descripcion": "Cerveza Heineken en botella de 33cl, sabor suave y reconocible.", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Barrica de Mahou", "descripcion": "Cerveza Mahou en barrica, sabor equilibrado y fresco.", "precio": "4.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "vinos-blancos",
       "nombre": "White Wines",
       "productos": [
-        {"nombre": "Alma de Valdeguera (Semidulce)", "descripcion": "Vino blanco semidulce. Precio: (Copa/Botella)", "precio": "3.00 - 15.00", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mara D.O Monterro (Godello)", "descripcion": "Vino blanco Godello. Precio: (Copa/Botella)", "precio": "3.60 - 18.50", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mariecake Albariño", "descripcion": "Vino blanco Albariño. Precio: (Copa/Botella)", "precio": "3.50 - 18.50", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Bicus D.O Rías Baixas (Albariño)", "descripcion": "Vino blanco Albariño. Precio: (Copa/Botella)", "precio": "3.00 - 16.00", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Alma de Valdeguera (Semidulce)", "descripcion": "Vino blanco semidulce. Precio: (Copa/Botella)", "precio": "3.00 - 15.00", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mara D.O Monterro (Godello)", "descripcion": "Vino blanco Godello. Precio: (Copa/Botella)", "precio": "3.60 - 18.50", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mariecake Albariño", "descripcion": "Vino blanco Albariño. Precio: (Copa/Botella)", "precio": "3.50 - 18.50", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Bicus D.O Rías Baixas (Albariño)", "descripcion": "Vino blanco Albariño. Precio: (Copa/Botella)", "precio": "3.00 - 16.00", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "vinos-tintos",
       "nombre": "Red Wines",
       "productos": [
-        {"nombre": "Cibus (Crianza) Ribera del Duero", "descripcion": "Vino tinto crianza. Precio: (Copa/Botella)", "precio": "2.90 - 15.00", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "El Coto (Crianza) Rioja", "descripcion": "Vino tinto Rioja crianza. Precio: (Copa/Botella)", "precio": "3.20 - 16.50", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Alcorcake (Tempranillo Crianza) Rioja", "descripcion": "Vino tinto Rioja crianza. Precio: (Copa/Botella)", "precio": "2.90 - 15.00", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Cibus (Crianza) Ribera del Duero", "descripcion": "Vino tinto crianza. Precio: (Copa/Botella)", "precio": "2.90 - 15.00", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "El Coto (Crianza) Rioja", "descripcion": "Vino tinto Rioja crianza. Precio: (Copa/Botella)", "precio": "3.20 - 16.50", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Alcorcake (Tempranillo Crianza) Rioja", "descripcion": "Vino tinto Rioja crianza. Precio: (Copa/Botella)", "precio": "2.90 - 15.00", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "vino-rosado",
       "nombre": "Rosé Wine",
       "productos": [
-        {"nombre": "Peñascal", "descripcion": "Delicado vino rosado con aromas frucakeles y fresco en boca. Precio: (Copa/Botella)", "precio": "2.50 - 12.00", "alergenos": ["sulfitos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Peñascal", "descripcion": "Delicado vino rosado con aromas frucakeles y fresco en boca. Precio: (Copa/Botella)", "precio": "2.50 - 12.00", "alergenos": ["sulfitos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "vermut",
       "nombre": "Vermouth",
       "productos": [
-        {"nombre": "Martini Rojo", "descripcion": "Clásico vermut rojo, ideal para aperitivo. Precio: Copa", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Martini Blanco", "descripcion": "Vermut blanco suave y aromático. Precio: Copa", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Izaguirre Rojo", "descripcion": "Vermut rojo con intenso carácter y nocakes especiadas. Precio: Copa", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Boca Manga", "descripcion": "Vermut especial de la casa, sabor aromático y refrescante. Precio: Copa", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Martini Rojo", "descripcion": "Clásico vermut rojo, ideal para aperitivo. Precio: Copa", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Martini Blanco", "descripcion": "Vermut blanco suave y aromático. Precio: Copa", "precio": "3.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Izaguirre Rojo", "descripcion": "Vermut rojo con intenso carácter y nocakes especiadas. Precio: Copa", "precio": "2.90", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Boca Manga", "descripcion": "Vermut especial de la casa, sabor aromático y refrescante. Precio: Copa", "precio": "3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "c-cteles",
       "nombre": "Cocktails",
       "productos": [
-        {"nombre": "Mojito", "descripcion": "Refrescante cóctel con ron, lima, hierbabuena y soda. Precio: Copa Coctel", "precio": "7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Malibu", "descripcion": "Dulce y tropical cóctel con ron de coco. Precio: Copa Coctel", "precio": "6.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Aperol", "descripcion": "Cóctel vibrante y refrescante con Aperol y burbujas. Precio: Copa Coctel", "precio": "7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Mojito", "descripcion": "Refrescante cóctel con ron, lima, hierbabuena y soda. Precio: Copa Coctel", "precio": "7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Malibu", "descripcion": "Dulce y tropical cóctel con ron de coco. Precio: Copa Coctel", "precio": "6.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Aperol", "descripcion": "Cóctel vibrante y refrescante con Aperol y burbujas. Precio: Copa Coctel", "precio": "7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "licores-y-aperitivos",
       "nombre": "Liqueurs & Aperitifs",
       "productos": [
-        {"nombre": "Baileys", "descripcion": "Licor Irish cremoso de coffee y chocolate. Precio: (Chupito/Copa Baileys)", "precio": "2.70 - 4.50", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Licor Hierbas Ruavieja", "descripcion": "Exquisito licor de hierbas aromáticas. Precio: (Chupito/Copa Hierbas)", "precio": "2.50 - 4.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Orujo Blanco Ruavieja", "descripcion": "Orujo blanco puro y tradicional. Precio: (Chupito/Copa Orujo Blanco)", "precio": "2.50 - 4.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Licor coffee Ruavieja", "descripcion": "Licor de coffee intenso y aromático. Precio: (Chupito/Copa coffee Ruavieja)", "precio": "2.50 - 4.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Crema Ruavieja", "descripcion": "Licor cremoso ideal para postres o coffee. Precio: (Chupito/Copa coffee)", "precio": "2.50 - 4.00", "alergenos": ["lacteos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Pacharán Ruavieja", "descripcion": "Licor de endrinas con sabor tradicional. Precio: (Chupito/Copa Pacharán)", "precio": "2.50 - 4.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jagermeister", "descripcion": "Licor alemán de hierbas con sabor intenso y especiado. Precio: (Chupito/Copa Pequeña/Copa)", "precio": "2.50 - 4.70 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Soberano", "descripcion": "Licor de brandy con aroma suave y equilibrado. Precio: (Chupito/Copa Pequeña/Copa)", "precio": "2.00 - 3.00 - 6.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Terry", "descripcion": "Brandy de calidad con un toque de suavidad aromática. Precio: (Chupito/Copa Pequeña/Copa)", "precio": "2.10 - 3.20 - 6.20", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Castellana", "descripcion": "Licor equilibrado y tradicional. Precio: (Chupito/Copa Licor Castellana)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Licor Sin, Manzana", "descripcion": "Refrescante licor de manzana. Precio: (Chupito/Copa Licor Sin. Manzana)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Licor Sin, Melocotón", "descripcion": "Dulce licor de melocotón. Precio: (Chupito/Copa Licor Sin. Melocotón)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Licor Manzana", "descripcion": "Licor de manzana fresca y aromática. Precio: (Chupito/Copa Licor Manzana)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Licor Melocotón", "descripcion": "Licor dulce y afrucakedo de melocotón. Precio: (Chupito/Copa Licor Melocotón)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jose Cuervo", "descripcion": "Tequila clásico con sabor auténtico. Precio: (Chupito/Copa Jose Cuervo)", "precio": "2.50 - 3.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Frangelico", "descripcion": "Licor de avellanas con aroma dulce y elegante. Precio: (Copa Frangelico)", "precio": "4.00", "alergenos": ["frutos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Limonchelo", "descripcion": "Licor cítrico refrescante de limón. Precio: (Chupito/Copa Limonchelo)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Cointreau", "descripcion": "Licor de naranja con sabor equilibrado y brillante. Precio: (Copa Cointreau)", "precio": "4.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Disaronno", "descripcion": "Licor de almendra con un toque dulce y elegante. Precio: (Copa Disaronno)", "precio": "5.00", "alergenos": ["frutos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Baileys", "descripcion": "Licor Irish cremoso de coffee y chocolate. Precio: (Chupito/Copa Baileys)", "precio": "2.70 - 4.50", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Licor Hierbas Ruavieja", "descripcion": "Exquisito licor de hierbas aromáticas. Precio: (Chupito/Copa Hierbas)", "precio": "2.50 - 4.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Orujo Blanco Ruavieja", "descripcion": "Orujo blanco puro y tradicional. Precio: (Chupito/Copa Orujo Blanco)", "precio": "2.50 - 4.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Licor coffee Ruavieja", "descripcion": "Licor de coffee intenso y aromático. Precio: (Chupito/Copa coffee Ruavieja)", "precio": "2.50 - 4.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Crema Ruavieja", "descripcion": "Licor cremoso ideal para postres o coffee. Precio: (Chupito/Copa coffee)", "precio": "2.50 - 4.00", "alergenos": ["lacteos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Pacharán Ruavieja", "descripcion": "Licor de endrinas con sabor tradicional. Precio: (Chupito/Copa Pacharán)", "precio": "2.50 - 4.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jagermeister", "descripcion": "Licor alemán de hierbas con sabor intenso y especiado. Precio: (Chupito/Copa Pequeña/Copa)", "precio": "2.50 - 4.70 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Soberano", "descripcion": "Licor de brandy con aroma suave y equilibrado. Precio: (Chupito/Copa Pequeña/Copa)", "precio": "2.00 - 3.00 - 6.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Terry", "descripcion": "Brandy de calidad con un toque de suavidad aromática. Precio: (Chupito/Copa Pequeña/Copa)", "precio": "2.10 - 3.20 - 6.20", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Castellana", "descripcion": "Licor equilibrado y tradicional. Precio: (Chupito/Copa Licor Castellana)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Licor Sin, Manzana", "descripcion": "Refrescante licor de manzana. Precio: (Chupito/Copa Licor Sin. Manzana)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Licor Sin, Melocotón", "descripcion": "Dulce licor de melocotón. Precio: (Chupito/Copa Licor Sin. Melocotón)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Licor Manzana", "descripcion": "Licor de manzana fresca y aromática. Precio: (Chupito/Copa Licor Manzana)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Licor Melocotón", "descripcion": "Licor dulce y afrucakedo de melocotón. Precio: (Chupito/Copa Licor Melocotón)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jose Cuervo", "descripcion": "Tequila clásico con sabor auténtico. Precio: (Chupito/Copa Jose Cuervo)", "precio": "2.50 - 3.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Frangelico", "descripcion": "Licor de avellanas con aroma dulce y elegante. Precio: (Copa Frangelico)", "precio": "4.00", "alergenos": ["frutos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Limonchelo", "descripcion": "Licor cítrico refrescante de limón. Precio: (Chupito/Copa Limonchelo)", "precio": "2.00 - 3.20", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Cointreau", "descripcion": "Licor de naranja con sabor equilibrado y brillante. Precio: (Copa Cointreau)", "precio": "4.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Disaronno", "descripcion": "Licor de almendra con un toque dulce y elegante. Precio: (Copa Disaronno)", "precio": "5.00", "alergenos": ["frutos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "whiskies",
       "nombre": "Whiskies",
       "productos": [
-        {"nombre": "White Label", "descripcion": "Whisky suave y equilibrado. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Johnnie Walker Red", "descripcion": "Whisky clásico, ligero y fácil de disfrucaker. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Johnnie Walker Black", "descripcion": "Whisky intenso y aromático, con cuerpo y carácter. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 6.00 - 9.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "DYK", "descripcion": "Whisky de sabor equilibrado y suave. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "JB", "descripcion": "Whisky ligero y fácil de beber. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Cutty Sark", "descripcion": "Whisky con aroma delicado y sabor suave. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Chivas Regal", "descripcion": "Whisky premium de sabor redondo y elegante. Precio: (Chupito/Copa/Combinado)", "precio": "3.20 - 5.00 - 9.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Ballantines", "descripcion": "Whisky suave, redondo y con nocakes dulces. Precio: (Chupito/Copa/Combinado)", "precio": "2.50 - 5.00 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Jim Beam", "descripcion": "Whisky bourbon con aroma intenso y ligero toque dulce. Precio: (Chupito/Copa/Combinado)", "precio": "2.20 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Cardhu", "descripcion": "Whisky escocés de malcake, sabor suave y afrucakedo. Precio: (Chupito/Copa/Combinado)", "precio": "4.00 - 8.00 - 11.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "White Label", "descripcion": "Whisky suave y equilibrado. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Johnnie Walker Red", "descripcion": "Whisky clásico, ligero y fácil de disfrucaker. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Johnnie Walker Black", "descripcion": "Whisky intenso y aromático, con cuerpo y carácter. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 6.00 - 9.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "DYK", "descripcion": "Whisky de sabor equilibrado y suave. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "JB", "descripcion": "Whisky ligero y fácil de beber. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Cutty Sark", "descripcion": "Whisky con aroma delicado y sabor suave. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Chivas Regal", "descripcion": "Whisky premium de sabor redondo y elegante. Precio: (Chupito/Copa/Combinado)", "precio": "3.20 - 5.00 - 9.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Ballantines", "descripcion": "Whisky suave, redondo y con nocakes dulces. Precio: (Chupito/Copa/Combinado)", "precio": "2.50 - 5.00 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Jim Beam", "descripcion": "Whisky bourbon con aroma intenso y ligero toque dulce. Precio: (Chupito/Copa/Combinado)", "precio": "2.20 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Cardhu", "descripcion": "Whisky escocés de malcake, sabor suave y afrucakedo. Precio: (Chupito/Copa/Combinado)", "precio": "4.00 - 8.00 - 11.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "rones",
       "nombre": "Rums",
       "productos": [
-        {"nombre": "Brugal Añejo", "descripcion": "Ron añejo con nocakes suaves de caramelo y vainilla. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Havana 7", "descripcion": "Ron premium con sabor profundo, aromas de roble y especias. Precio: (Chupito/Copa/Combinado)", "precio": "3.00 - 4.70 - 7.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Legendario", "descripcion": "Ron oscuro y aromático con suaves nocakes de cacao y frucakes secas. Precio: (Chupito/Copa/Combinado)", "precio": "3.00 - 4.70 - 7.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Pampero", "descripcion": "Ron venezolano con un equilibrio perfecto entre dulzor y cuerpo. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Barceló Añejo", "descripcion": "Ron de añejamiento prolongado, con aromas suaves y redondos. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.50 - 7.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Bacardi Blanco", "descripcion": "Ron blanco ligero y versátil, perfecto para cócteles. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Sancake Teresa", "descripcion": "Ron venezolano elegante con nocakes dulces y afrucakedas. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Cacique", "descripcion": "Ron suave con aroma a miel y un final ligero y persistente. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Areucas", "descripcion": "Ron ligero y agradable, ideal para disfrucaker black o en combinados. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Zacapa 23 Solera", "descripcion": "Ron premium guatemalteco, envejecido en barricas de roble. Precio: (Chupito/Copa/Combinado)", "precio": "4.50 - 8.00 - 12.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Brugal Añejo", "descripcion": "Ron añejo con nocakes suaves de caramelo y vainilla. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Havana 7", "descripcion": "Ron premium con sabor profundo, aromas de roble y especias. Precio: (Chupito/Copa/Combinado)", "precio": "3.00 - 4.70 - 7.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Legendario", "descripcion": "Ron oscuro y aromático con suaves nocakes de cacao y frucakes secas. Precio: (Chupito/Copa/Combinado)", "precio": "3.00 - 4.70 - 7.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Pampero", "descripcion": "Ron venezolano con un equilibrio perfecto entre dulzor y cuerpo. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Barceló Añejo", "descripcion": "Ron de añejamiento prolongado, con aromas suaves y redondos. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.50 - 7.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Bacardi Blanco", "descripcion": "Ron blanco ligero y versátil, perfecto para cócteles. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Sancake Teresa", "descripcion": "Ron venezolano elegante con nocakes dulces y afrucakedas. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Cacique", "descripcion": "Ron suave con aroma a miel y un final ligero y persistente. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Areucas", "descripcion": "Ron ligero y agradable, ideal para disfrucaker black o en combinados. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Zacapa 23 Solera", "descripcion": "Ron premium guatemalteco, envejecido en barricas de roble. Precio: (Chupito/Copa/Combinado)", "precio": "4.50 - 8.00 - 12.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     },
     {
       "identificador": "ginebras-vodka",
       "nombre": "Gins & Vodka",
       "productos": [
-        {"nombre": "Beefeater", "descripcion": "Ginebra clásica de Londres, con nocakes botánicas intensas. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Larius", "descripcion": "Ginebra suave y equilibrada. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 6.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Cakenqueray", "descripcion": "Ginebra aromática con un sabor potente y equilibrado. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Bombay Sapphire", "descripcion": "Ginebra premium con finas nocakes de enebro y especias. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Seagram´s", "descripcion": "Ginebra ligera y versátil, perfeccake para combinados. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.95", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Hendrick´s", "descripcion": "Ginebra premium con toques de pepino y rosa, sofisticada y elegante. Precio: (Chupito/Copa/Combinado)", "precio": "3.00 - 5.00 - 8.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Martin Millers", "descripcion": "Ginebra suave y refinada, con aroma cítrico y equilibrado. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Brockmans", "descripcion": "Ginebra afrucakeda y aromática, con nocakes de arándano y cítricos. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Smirnoff", "descripcion": "Vodka suave y neutro, ideal para combinados y cócteles. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Buldog", "descripcion": "Ginebra aromática con intenso sabor a enebro y nocakes botánicas. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Nordes", "descripcion": "Ginebra gallega con delicadas nocakes florales y herbales. Precio: (Chupito/Copa/Combinado)", "precio": "2.50 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Puerto de Indias", "descripcion": "Ginebra suave con intenso aroma a fresas naturales. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Absolut", "descripcion": "Vodka puro y limpio, con sabor suave y neutral. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "G´Vine", "descripcion": "Ginebra francesa refinada con nocakes de uva y flores. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Larius 12", "descripcion": "Ginebra suave con delicado aroma herbal y cítrico. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 7.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"},
-        {"nombre": "Mombasa", "descripcion": "Ginebra aromática con toque exótico y especiado. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "/images/imagen1.jpg"}
+        {"nombre": "Beefeater", "descripcion": "Ginebra clásica de Londres, con nocakes botánicas intensas. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Larius", "descripcion": "Ginebra suave y equilibrada. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 6.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Cakenqueray", "descripcion": "Ginebra aromática con un sabor potente y equilibrado. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Bombay Sapphire", "descripcion": "Ginebra premium con finas nocakes de enebro y especias. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Seagram´s", "descripcion": "Ginebra ligera y versátil, perfeccake para combinados. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 6.95", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Hendrick´s", "descripcion": "Ginebra premium con toques de pepino y rosa, sofisticada y elegante. Precio: (Chupito/Copa/Combinado)", "precio": "3.00 - 5.00 - 8.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Martin Millers", "descripcion": "Ginebra suave y refinada, con aroma cítrico y equilibrado. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Brockmans", "descripcion": "Ginebra afrucakeda y aromática, con nocakes de arándano y cítricos. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Smirnoff", "descripcion": "Vodka suave y neutro, ideal para combinados y cócteles. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Buldog", "descripcion": "Ginebra aromática con intenso sabor a enebro y nocakes botánicas. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Nordes", "descripcion": "Ginebra gallega con delicadas nocakes florales y herbales. Precio: (Chupito/Copa/Combinado)", "precio": "2.50 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Puerto de Indias", "descripcion": "Ginebra suave con intenso aroma a fresas naturales. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Absolut", "descripcion": "Vodka puro y limpio, con sabor suave y neutral. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.20 - 7.00", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "G´Vine", "descripcion": "Ginebra francesa refinada con nocakes de uva y flores. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Larius 12", "descripcion": "Ginebra suave con delicado aroma herbal y cítrico. Precio: (Chupito/Copa/Combinado)", "precio": "2.00 - 4.00 - 7.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"},
+        {"nombre": "Mombasa", "descripcion": "Ginebra aromática con toque exótico y especiado. Precio: (Chupito/Copa/Combinado)", "precio": "3.50 - 5.00 - 8.50", "alergenos": ["free-alergenos"], "imagen": "../images/imagen1.jpg"}
       ]
     }
   ]
