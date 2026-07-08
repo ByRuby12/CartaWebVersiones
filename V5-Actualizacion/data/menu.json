@@ -1,0 +1,217 @@
+{
+  "categories": [
+    {
+      "identificador": "entrantes",
+      "nombre": "Entrantes",
+      "productos": [
+        {
+          "nombre": "Bravas Ahumadas",
+          "descripcion": "Patatas confitadas con salsa brava casera y alioli de ajo negro.",
+          "precio": "6.50",
+          "alergenos": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "lacteos",
+            "frutos",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Croquetas de Jamón Ibérico",
+          "descripcion": "Cremosas por dentro y crujientes por fuera (6 uds).",
+          "precio": "8.00",
+          "alergenos": [
+            "gluten",
+            "lacteos",
+            "huevos"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Tostadas de Aguacate",
+          "descripcion": "Pan rústico, aguacate maduro, tomate cherry y semillas.",
+          "precio": "7.20",
+          "alergenos": [
+            "gluten"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        }
+      ]
+    },
+    {
+      "identificador": "ensaladas",
+      "nombre": "Ensaladas",
+      "productos": [
+        {
+          "nombre": "Ensalada Mediterránea",
+          "descripcion": "Mix de lechugas, tomates secos, queso feta y aceitunas.",
+          "precio": "9.50",
+          "alergenos": [
+            "lacteos"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Bowl de Pollo y Quinoa",
+          "descripcion": "Pechuga de pollo, quinoa, aguacate y vinagreta cítrica.",
+          "precio": "12.00",
+          "alergenos": [
+            "cacahuetes"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Ensalada de Burrata",
+          "descripcion": "Burrata cremosa, tomates cherry, pesto y piñones tostados.",
+          "precio": "11.90",
+          "alergenos": [
+            "lacteos",
+            "cacahuetes"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        }
+      ]
+    },
+    {
+      "identificador": "principales",
+      "nombre": "Platos Principales",
+      "productos": [
+        {
+          "nombre": "Hamburguesa Trufada",
+          "descripcion": "200g de ternera, queso brie, rúcula y mayonesa de trufa negra.",
+          "precio": "13.90",
+          "alergenos": [
+            "gluten",
+            "lacteos",
+            "huevos"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Salmón a la Brasa",
+          "descripcion": "Lomo de salmón fresco con guarnición de verduras de temporada.",
+          "precio": "16.50",
+          "alergenos": [
+            "pescado"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Risotto de Champiñones",
+          "descripcion": "Arroz cremoso con setas, parmesano y aceite de trufa.",
+          "precio": "14.20",
+          "alergenos": [
+            "lacteos"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        }
+      ]
+    },
+    {
+      "identificador": "parrilla",
+      "nombre": "Parrilla",
+      "productos": [
+        {
+          "nombre": "Chuletón a la Parrilla",
+          "descripcion": "400g de carne madurada, patata panadera y chimichurri.",
+          "precio": "22.80",
+          "alergenos": [
+            "libre"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Brochetas de Gambas",
+          "descripcion": "Gambas marinadas con limón y ajo, servidas con ensalada.",
+          "precio": "18.00",
+          "alergenos": [
+            "pescado",
+            "crustaceos"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        }
+      ]
+    },
+    {
+      "identificador": "postres",
+      "nombre": "Postres",
+      "productos": [
+        {
+          "nombre": "Tarta de Queso Casera",
+          "descripcion": "Receta tradicional horneada con centro cremoso.",
+          "precio": "6.00",
+          "alergenos": [
+            "gluten",
+            "lacteos",
+            "huevos"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Brownie de Chocolate",
+          "descripcion": "Brownie tibio con helado de vainilla y nueces.",
+          "precio": "6.80",
+          "alergenos": [
+            "gluten",
+            "lacteos",
+            "huevos",
+            "cacahuetes"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Sorbetes de Frutas",
+          "descripcion": "Selección de sorbetes naturales de limón y frutos rojos.",
+          "precio": "5.50",
+          "alergenos": [
+            "libre"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        }
+      ]
+    },
+    {
+      "identificador": "bebidas",
+      "nombre": "Bebidas",
+      "productos": [
+        {
+          "nombre": "Gin Tonic Especial",
+          "descripcion": "Gin premium, tónica artesanal y cítricos frescos.",
+          "precio": "9.50",
+          "alergenos": [
+            "libre"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Café de Especialidad",
+          "descripcion": "Café filtrado de origen con notas de chocolate y frutos rojos.",
+          "precio": "3.20",
+          "alergenos": [
+            "libre"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        },
+        {
+          "nombre": "Limonada Casera",
+          "descripcion": "Limonada fresca con menta y un toque de jengibre.",
+          "precio": "4.80",
+          "alergenos": [
+            "libre"
+          ],
+          "imagen": "/images/imagen1.jpg"
+        }
+      ]
+    }
+  ]
+}

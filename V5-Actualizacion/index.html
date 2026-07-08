@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e85d04">
+    <meta name="description" content="Carta digital moderna para restaurantes con menú gestionable por JSON, imágenes ampliables y contacto desde pestañas." />
+    <meta name="keywords" content="carta digital, menú restaurante, carta online, hostelería, reserva WhatsApp, carta JSON" />
+    <meta name="author" content="ByRuby12" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://byruby12.github.io/Prueba" />
+    <meta property="og:title" content="Carta Digital | Hostelería Demo" />
+    <meta property="og:description" content="Carta digital moderna para restaurantes con menú gestionable por JSON y contacto rápido." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://byruby12.github.io/Prueba" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Carta Digital | Hostelería Demo" />
+    <meta property="twitter:description" content="Carta digital moderna para restaurantes con menú gestionable por JSON y contacto rápido." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80" />
+    <title>Carta Digital | Tu Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="hero-banner" id="heroBanner">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-top">
+                <div class="logo" id="brandLogo"></div>
+                <div class="location-block">
+                    <div class="company-name" id="brandCompany"></div>
+                    <div class="location" id="brandLocation"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="category-nav" id="categoryNav"></nav>
+    </div>
+
+    <main>
+        <section id="menuContainer"></section>
+    </main>
+
+    <div class="image-modal" id="imageModal">
+        <div class="image-modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Cerrar imagen">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modalImage" src="" alt="Vista ampliada" />
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-social-block">
+                <p class="footer-social-label" id="footerSocialLabel"></p>
+                <div class="footer-social-list" id="footerSocial"></div>
+            </div>
+            <p class="footer-copy" id="footerCopy"></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

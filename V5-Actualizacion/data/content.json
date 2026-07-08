@@ -1,0 +1,119 @@
+{
+  "tituloPagina": "Carta Digital | Hostelería Demo",
+  "marca": {
+    "logoImagen": "images/logotipo.jpg",
+    "nombreEmpresa": "Hostelería Demo",
+    "ubicacion": "Calle Falsa 123, Madrid",
+    "imagenHero": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80",
+    "subtituloHero": "Sabores para compartir",
+    "tituloHero": "Bienvenido a nuestra carta digital",
+    "textoHero": "Disfruta de un menú lleno de sabor, detalles cuidados y una experiencia visual agradable.",
+    "botonesHero": [
+      {
+        "label": "Reservar por WhatsApp",
+        "icon": "fab fa-whatsapp",
+        "url": "https://wa.me/34600000000"
+      },
+      {
+        "label": "Reseñas y valoraciones",
+        "icon": "fab fa-google",
+        "url": "https://example.com/review"
+      }
+    ]
+  },
+  "inicio": {
+    "encabezado": "Bienvenido a Hostelería Demo",
+    "descripcion": "Nuestro local ofrece una experiencia gastronómica fresca, deliciosa y acogedora para todo tipo de comensales.",
+    "bloques": [
+      {
+        "icon": "🍽️",
+        "titulo": "Cocina",
+        "texto": "Recetas caseras con ingredientes de temporada y un menú pensado para compartir."
+      },
+      {
+        "icon": "🌿",
+        "titulo": "Ambiente",
+        "texto": "Un espacio cálido y relajado, ideal para comidas en familia, con amigos o cenas tranquilas."
+      },
+      {
+        "icon": "❤️",
+        "titulo": "Calidad",
+        "texto": "Servicio atento y platos elaborados con pasión para que cada visita sea memorable."
+      }
+    ]
+  },
+  "contacto": {
+    "encabezado": "Contacto",
+    "logoImagen": "images/logotipo.jpg",
+    "nombreEmpresa": "BAR NOSEQUE",
+    "direccion": "C. Huesca, 12, Local 3, 28934 Móstoles, Madrid",
+    "horario": "Martes a Domingo 8:00 a 01:00",
+    "correo": "lecaleca2025@hotmail.com",
+    "telefono": "+34 910 941 510",
+    "urlResenas": "https://g.page/r/CUCO1uM9eijzEBE/review",
+    "urlReserva": "tel:910941510",
+    "descripcion": "Aquí tienes todo lo necesario para ver el local, reservar y seguirnos en nuestras redes.",
+    "labels": {
+      "direccion": "Dirección",
+      "horario": "Horario",
+      "correo": "Correo"
+    },
+    "buttons": {
+      "review": "Calificanos ahora",
+      "book": "Contactar ahora"
+    },
+    "redes": [
+      {
+        "name": "Instagram",
+        "icon": "fab fa-instagram",
+        "url": "https://instagram.com/tu_restaurante"
+      },
+      {
+        "name": "WhatsApp",
+        "icon": "fab fa-whatsapp",
+        "url": "https://wa.me/34600000000"
+      },
+      {
+        "name": "Google",
+        "icon": "fab fa-google",
+        "url": "https://g.page/r/tu-enlace-google/review"
+      }
+    ]
+  },
+  "pie": {
+    "texto": "Diseñado y desarrollado por ByRuby12 - V.5\nCopyright ©2026 Derechos reservados para Hostelería Demo",
+    "tituloRedes": "Redes sociales",
+    "redes": [
+      {
+        "name": "Instagram",
+        "icon": "fab fa-instagram",
+        "url": "https://instagram.com/tu_restaurante",
+        "color": "#E4405F"
+      },
+      {
+        "name": "WhatsApp",
+        "icon": "fab fa-whatsapp",
+        "url": "https://wa.me/34600000000",
+        "color": "#25D366"
+      },
+      {
+        "name": "Facebook",
+        "icon": "fab fa-facebook-f",
+        "url": "https://facebook.com/tu_restaurante",
+        "color": "#1877F2"
+      },
+      {
+        "name": "TikTok",
+        "icon": "fab fa-tiktok",
+        "url": "https://tiktok.com/@tu_restaurante",
+        "color": "#000000"
+      },
+      {
+        "name": "Google",
+        "icon": "fab fa-google",
+        "url": "https://g.page/r/tu-enlace-google/review",
+        "color": "#4285F4"
+      }
+    ]
+  }
+}
