@@ -1,0 +1,78 @@
+{
+  "pageTitle": "Bohio Bar",
+  "pageDescription": "Bohio Bar - Your place to enjoy delicious breakfasts, rations, burgers, sandwiches and more.",
+  "keywords": "Bohio Bar, breakfasts, rations, burgers, sandwiches, drinks, desserts, promotions, contact",
+  "author": "Designed and developed by ByRuby12 - V5.0.0",
+  "favicon": "images/icono_web.png",
+  "brand": {
+    "logoImage": "images/logo-bar.png",
+    "iconImage": "images/icono_web.png",
+    "companyName": "Bohio Bar",
+    "location": "C. Huesca, 12, Local 3, 28934 Móstoles, Madrid",
+    "heroImage": "images/banner-bar.jpeg",
+    "heroEyebrow": "Flavors to share",
+    "heroTitle": "Welcome to our digital menu",
+    "heroText": "Enjoy a menu full of flavor, thoughtful details and a pleasant visual experience.",
+    "heroButtons": [
+      {
+        "label": "Book via WhatsApp",
+        "icon": "fab fa-whatsapp",
+        "url": "https://wa.me/34600000000"
+      },
+      {
+        "label": "Reviews & ratings",
+        "icon": "fab fa-google",
+        "url": "https://example.com/review"
+      }
+    ]
+  },
+  "contact": {
+    "logoImage": "images/logo-bar.png",
+    "companyName": "Bohio Bar",
+    "address": "C. Huesca, 12, Local 3, 28934 Móstoles, Madrid",
+    "hours": "Tuesday to Sunday 8:00 to 01:00",
+    "email": "lecaleca2025@hotmail.com",
+    "telephone": "910941510",
+    "reviewUrl": "https://g.page/r/CUCO1uM9eijzEBE/review",
+    "bookUrl": "tel:910941510",
+    "labels": {
+      "address": "Address",
+      "hours": "Hours",
+      "email": "Email"
+    },
+    "buttons": {
+      "review": "Rate us now",
+      "book": "Contact now"
+    }
+  },
+  "footer": {
+    "text": "Copyright ©2026 All rights reserved for Bohio Bar. Designed and developed by ByRuby12 - V5.0.0",
+    "socialTitle": "Social links",
+    "social": [
+      {
+        "name": "Instagram",
+        "icon": "fab fa-instagram",
+        "url": "https://www.instagram.com/bohiobar2025/",
+        "color": "#E4405F"
+      },
+      {
+        "name": "TikTok",
+        "icon": "fab fa-tiktok",
+        "url": "https://www.tiktok.com/@bohio.bar",
+        "color": "#000000"
+      },
+      {
+        "name": "Facebook",
+        "icon": "fab fa-facebook",
+        "url": "#",
+        "color": "#1877F2"
+      },
+      {
+        "name": "WhatsApp",
+        "icon": "fab fa-whatsapp",
+        "url": "#",
+        "color": "#25D366"
+      }
+    ]
+  }
+}
