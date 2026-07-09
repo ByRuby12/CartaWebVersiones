@@ -94,6 +94,7 @@ select {
     align-items: center;
     justify-content: flex-start;
     gap: 12px;
+    /* Mantener logo y bloque de texto en la misma línea; permitir que el texto interno haga wrap */
     flex-wrap: nowrap;
     min-width: 0;
 }
@@ -120,7 +121,6 @@ select {
     transform: translateY(-1px);
     background: rgba(255,255,255,1);
 }
-
 body.dark-mode .theme-toggle {
     background: rgba(255,255,255,0.12);
     border-color: rgba(255,255,255,0.18);
@@ -229,6 +229,12 @@ body.dark-mode .lang-toggle:hover { background: rgba(255,255,255,0.18); }
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 0.02em;
     text-shadow: 0 4px 16px rgba(0,0,0,0.25);
+    /* permitir salto de línea dentro del bloque sin forzar que el bloque baje de línea */
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 .location {
@@ -253,6 +259,7 @@ body.dark-mode .lang-toggle:hover { background: rgba(255,255,255,0.18); }
     overflow-wrap: anywhere;
     max-width: 100%;
 }
+
 
 .hero-copy,
 .hero-actions,
@@ -382,6 +389,16 @@ h1,
 
     .contact-actions .btn-action {
         min-width: 160px;
+    }
+
+    /* En móvil reservar menos espacio pero suficiente para los botones */
+    .location {
+        max-width: calc(100% - 88px);
+    }
+
+    /* Añadir padding-right al banner para que el contenido no llegue hasta el final bajo los botones */
+    .hero-banner {
+        padding-right: 110px;
     }
 }
 
@@ -942,6 +959,9 @@ body.dark-mode .footer-social-link {
     /* Let address wrap naturally on smaller widths and reduce font slightly */
     .location {
         font-size: 0.84rem;
+        /* reservar espacio a la derecha para botones en pantallas medianas/pequeñas */
+        max-width: calc(100% - 110px);
+        min-width: 0;
         white-space: normal;
         overflow: visible;
         text-overflow: clip;
