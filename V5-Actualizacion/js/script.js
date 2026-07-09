@@ -103,6 +103,16 @@ function resolveAllergenIconName(allergen) {
     return allergenIconMap[normalized] || allergenIconMap[allergen] || null;
 }
 
+function normalizeAssetPath(path) {
+    if (!path) return '';
+    const value = String(path).trim();
+    if (!value) return '';
+    if (/^(https?:)?\/\//i.test(value) || value.startsWith('data:') || value.startsWith('mailto:') || value.startsWith('tel:')) {
+        return value;
+    }
+    return value.replace(/^\/+/, '');
+}
+
 function buildSocialArray(redes) {
     if (!redes || typeof redes !== 'object') return [];
     return Object.entries(redes)
@@ -397,16 +407,16 @@ function renderHero(brand) {
     const heroText = document.getElementById('heroText');
     const actions = document.getElementById('heroActions');
 
-    if (heroBanner) heroBanner.style.backgroundImage = `linear-gradient(rgba(10,10,10,0.45), rgba(10,10,10,0.45)), url('${brand.heroImage}')`;
+    if (heroBanner) heroBanner.style.backgroundImage = `linear-gradient(rgba(10,10,10,0.45), rgba(10,10,10,0.45)), url('${normalizeAssetPath(brand.heroImage)}')`;
     if (logo) {
         if (brand.logoImage) {
-            logo.innerHTML = `<img src="${brand.logoImage}" alt="${brand.companyName || 'Logo'}">`;
+            logo.innerHTML = `<img src="${normalizeAssetPath(brand.logoImage)}" alt="${brand.companyName || 'Logo'}">`;
         } else {
             logo.textContent = brand.logo || '';
         }
     }
     if (company) company.textContent = brand.companyName || '';
-    if (location) location.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${brand.location}`;
+    if (location) location.textContent = brand.location || '';
     if (eyebrow) eyebrow.textContent = brand.heroEyebrow;
     if (title) title.textContent = brand.heroTitle;
     if (heroText) heroText.textContent = brand.heroText;
@@ -455,11 +465,6 @@ function renderMenu(categories, content) {
         section.id = sectionData.id;
         section.className = `category-section ${index !== 0 ? 'hidden-section' : ''}`;
 
-        const title = document.createElement('h2');
-        title.className = 'category-title';
-        title.textContent = sectionData.name;
-        section.appendChild(title);
-
         if (sectionData.isContact) {
             section.innerHTML += renderContactSection(contact);
         } else {
@@ -483,8 +488,9 @@ function renderMenu(categories, content) {
                     })
                     .join('');
 
+                const itemImage = normalizeAssetPath(item.image);
                 card.innerHTML = `
-                    <div class="product-image" style="background-image:url('${item.image}')"></div>
+                    <div class="product-image" style="background-image:url('${itemImage}')"></div>
                     <div class="product-info">
                         <div class="product-header">
                             <h3 class="product-title">${item.name}</h3>
@@ -498,7 +504,7 @@ function renderMenu(categories, content) {
                 const imageDiv = card.querySelector('.product-image');
                 if (imageDiv) {
                     imageDiv.style.cursor = 'zoom-in';
-                    imageDiv.addEventListener('click', () => openImageModal(item.image, item.name));
+                    imageDiv.addEventListener('click', () => openImageModal(itemImage, item.name));
                 }
 
                 grid.appendChild(card);
@@ -553,7 +559,7 @@ function renderHomeSection(home) {
             <div class="contact-card contact-main-card">
                 <div class="contact-logo-block">
                     <div class="contact-logo">
-                        ${home.logoImage ? `<img src="${home.logoImage}" alt="${home.companyName} logo" />` : ''}
+                        ${home.logoImage ? `<img src="${normalizeAssetPath(home.logoImage)}" alt="${home.companyName} logo" />` : ''}
                     </div>
                     <h2>${home.heading || ''}</h2>
                     <p class="contact-description">${home.description || ''}</p>
@@ -572,7 +578,7 @@ function renderContactSection(contact) {
             <div class="contact-card contact-main-card">
                 <div class="contact-logo-block">
                     <div class="contact-logo">
-                        ${contact.logoImage ? `<img src="${contact.logoImage}" alt="${contact.companyName} logo" />` : ''}
+                        ${contact.logoImage ? `<img src="${normalizeAssetPath(contact.logoImage)}" alt="${contact.companyName} logo" />` : ''}
                     </div>
                     <h2>${contact.companyName || ''}</h2>
                     <p class="contact-description">${contact.description || ''}</p>
@@ -664,7 +670,7 @@ function openImageModal(src, alt) {
     const modal = document.getElementById('imageModal');
     const modalImage = document.getElementById('modalImage');
     if (!modal || !modalImage) return;
-    modalImage.src = src;
+    modalImage.src = normalizeAssetPath(src);
     modalImage.alt = alt;
     modal.classList.add('open');
 }

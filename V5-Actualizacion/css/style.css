@@ -211,11 +211,12 @@ body.dark-mode .lang-toggle:hover { background: rgba(255,255,255,0.18); }
     flex-direction: column;
     gap: 2px;
     min-width: 0;
+    max-width: min(360px, calc(100vw - 140px));
 }
 
 .company-name {
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-shadow: 0 4px 16px rgba(0,0,0,0.25);
@@ -223,15 +224,17 @@ body.dark-mode .lang-toggle:hover { background: rgba(255,255,255,0.18); }
 
 .location {
     color: #f8fafc;
-    font-size: 0.92rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    font-size: 0.88rem;
+    display: block;
     padding: 0;
     border-radius: 0;
     background: transparent;
     border: none;
-    white-space: nowrap;
+    line-height: 1.35;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    max-width: 100%;
 }
 
 .hero-copy,
@@ -475,11 +478,7 @@ main {
 }
 
 .category-title {
-    font-size: 1.65rem;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    display: inline-block;
-    border-bottom: 3px solid var(--primary);
+    display: none;
 }
 
 .product-grid {
@@ -544,23 +543,28 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 12px;
+    gap: 8px;
 }
 
 .product-header {
     display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 12px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 16px;
     align-items: center;
 }
 
 .product-title {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     margin: 0;
     line-height: 1.3;
     min-width: 0;
-    overflow-wrap: anywhere;
+    max-width: 100%;
+    overflow-wrap: break-word;
     word-break: break-word;
+}
+
+.product-price {
+    margin-top: 0.1rem;
 }
 
 .product-price {
@@ -577,7 +581,7 @@ main {
 .product-desc {
     color: var(--text-muted);
     margin: 0;
-    line-height: 1.75;
+    line-height: 1.5;
 }
 
 .allergens {
@@ -609,19 +613,19 @@ main {
 .contact-section {
     background: rgba(255,255,255,0.95);
     border: 1px solid var(--border);
-    border-radius: 32px;
+    border-radius: 28px;
     box-shadow: var(--shadow);
-    padding: 36px;
-    margin: 40px auto 20px;
+    padding: 24px;
+    margin: 24px auto 18px;
     width: 100%;
-    max-width: 1080px;
+    max-width: 760px;
 }
 
 .contact-grid {
     display: grid;
-    gap: 24px;
+    gap: 18px;
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 760px;
     justify-items: center;
 }
 
@@ -635,9 +639,9 @@ main {
 .contact-card {
     width: 100%;
     background: var(--surface);
-    border-radius: 26px;
+    border-radius: 24px;
     border: 1px solid var(--border);
-    padding: 28px;
+    padding: 20px;
 }
 
 .contact-logo-block {
@@ -645,19 +649,19 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 16px;
-    margin-bottom: 24px;
+    gap: 14px;
+    margin-bottom: 18px;
 }
 
 .contact-logo {
-    width: 120px;
-    height: 120px;
+    width: 96px;
+    height: 96px;
     overflow: hidden;
     display: grid;
     place-items: center;
     background: rgba(255,255,255,0.95);
     border: 2px solid rgba(232, 93, 4, 0.22);
-    box-shadow: 0 18px 36px rgba(16, 42, 67, 0.12);
+    box-shadow: 0 14px 28px rgba(16, 42, 67, 0.1);
     margin-bottom: 0;
     border-radius: 50%;
 }
@@ -671,15 +675,15 @@ main {
 
 .contact-logo-block h2 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     letter-spacing: 0.01em;
 }
 
 .contact-description {
     margin: 0;
     color: var(--text-muted);
-    line-height: 1.7;
-    max-width: 520px;
+    line-height: 1.6;
+    max-width: 440px;
 }
 
 .contact-info-grid {
@@ -689,23 +693,23 @@ main {
 
 .contact-info-card {
     display: grid;
-    grid-template-columns: 52px 1fr;
-    gap: 14px;
+    grid-template-columns: 44px 1fr;
+    gap: 12px;
     background: rgba(232,93,4,0.06);
     border: 1px solid rgba(232,93,4,0.16);
-    border-radius: 24px;
-    padding: 18px 20px;
+    border-radius: 22px;
+    padding: 14px 16px;
     align-items: center;
 }
 
 .contact-info-icon {
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
     display: grid;
     place-items: center;
-    border-radius: 18px;
+    border-radius: 16px;
     background: rgba(232,93,4,0.13);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .contact-info-card strong {
@@ -777,19 +781,21 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 22px;
+    gap: 10px;
+    margin-top: 16px;
 }
 
 .contact-actions .btn-action {
-    min-width: 180px;
+    min-width: 140px;
+    padding: 0.8rem 1.05rem;
+    font-size: 0.95rem;
 }
 
 @media (max-width: 680px) {
     .contact-actions .btn-action {
         width: 100%;
         min-width: 0;
-        max-width: 280px;
+        max-width: 240px;
     }
 }
 
@@ -897,9 +903,12 @@ body.dark-mode .footer-social-link {
         justify-content: space-between;
     }
 
+    .location-block {
+        max-width: min(280px, calc(100vw - 140px));
+    }
+
     .location {
-        width: 100%;
-        justify-content: center;
+        font-size: 0.84rem;
     }
 
     .theme-toggle {
@@ -945,7 +954,9 @@ body.dark-mode .footer-social-link {
     }
 
     .product-header {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 14px;
         align-items: flex-start;
     }
 
