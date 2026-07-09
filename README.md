@@ -4,16 +4,29 @@ Este repositorio contiene una **plantilla web para bares o cafeterías**, dispon
 
 ## 🔗 Ejemplos en línea
 
-- 💻 **Versión básica (solo carta digital):**  
-  [CartaWebVersiones/V1-Basico](https://byruby12.github.io/CartaWebVersiones/V1-Basico/)
+- 💻 **Versión 1 - Básica:**  
+  https://byruby12.github.io/CartaWebVersiones/Version-1-Basica
   
-- 📱 **Versión con redes sociales integradas:**  
-  [CartaWebVersiones/V2-RedesSociales](https://byruby12.github.io/CartaWebVersiones/V2-RedesSociales/)
-  
-- ⚠️ **Versión con información sobre alérgenos:**  
-  [CartaWebVersiones/V3-Alergenos](https://byruby12.github.io/CartaWebVersiones/V3-Alergenos/)
+- 🌐 **Versión 2 - Profesional:**  
+  https://byruby12.github.io/CartaWebVersiones/Version-2-Profesional
 
 > Todas las versiones están organizadas en carpetas separadas dentro del repositorio.
+
+## 📌 Resumen rápido de versiones
+
+- **Versión 1 - Básica**
+  - Carta digital simple y funcional
+  - Navegación por categorías
+  - Diseño responsivo
+  - Datos cargados desde JSON
+  - Ideal para una carta rápida y fácil de personalizar
+
+- **Versión 2 - Profesional**
+  - Cabecera más avanzada y diseño pulido
+  - Botón de idioma con icono de globo
+  - Menú de productos mejorado
+  - Sección de contacto y footer completos
+  - Mejor experiencia visual en desktop y móvil
 
 ---
 
