@@ -116,8 +116,10 @@ function normalizeAssetPath(path) {
 function shouldRenderProductImage(itemImage) {
     const value = normalizeAssetPath(itemImage);
     if (!value) return false;
-    const normalized = value.replace(/^\/+/, '').toLowerCase();
-    return !['images/imagen1.jpg', 'images/imagen1.jpeg', 'images/imagen1.png'].includes(normalized);
+    // Render any valid image path. Previously some sample filenames were excluded
+    // (e.g. 'imagen1.jpg') which prevented previews from showing when data
+    // referenced that file. We now render any non-empty image path.
+    return true;
 }
 
 function applyLazyBackgroundImage(element) {
