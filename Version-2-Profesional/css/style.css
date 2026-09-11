@@ -299,8 +299,11 @@ h1,
 
 .image-modal-content img {
     display: block;
-    width: 100%;
+    max-width: 95vw;
+    max-height: 90vh;
+    width: auto;
     height: auto;
+    object-fit: contain;
     border-radius: 22px;
 }
 
@@ -571,6 +574,7 @@ main {
 .product-image {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     min-height: 160px;
     background-color: #f4f7fb;

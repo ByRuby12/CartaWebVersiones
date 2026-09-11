@@ -122,6 +122,12 @@ function shouldRenderProductImage(itemImage) {
     return true;
 }
 
+function formatProductPrice(price) {
+    const value = String(price ?? '').trim();
+    if (!value) return '';
+    return /€|eur(?:os?)?/i.test(value) ? value : `${value} €`;
+}
+
 function applyLazyBackgroundImage(element) {
     if (!element || !element.dataset.src) return;
     const src = normalizeAssetPath(element.dataset.src);
@@ -192,11 +198,6 @@ function updatePageMetadata(contentData) {
         authorMeta.content = contentData.author || contentData.desarrollador || contentData.developer || '';
     }
 
-    const favicon = document.querySelector('link[rel="icon"]') || document.createElement('link');
-    favicon.rel = 'icon';
-    favicon.type = 'image/x-icon';
-    favicon.href = contentData.favicon || contentData.iconoFavicon || contentData.brand?.iconImage || contentData.brand?.logoImage || 'images/icono_web.png';
-    if (!favicon.parentNode) document.head.appendChild(favicon);
 }
 
 async function loadJson(path, fallback) {
@@ -274,15 +275,9 @@ async function init() {
         authorMeta.content = contentData.author || contentData.desarrollador || contentData.developer || '';
     }
 
-    const favicon = document.querySelector('link[rel="icon"]') || document.createElement('link');
-    favicon.rel = 'icon';
-    favicon.type = 'image/x-icon';
-    favicon.href = contentData.favicon || contentData.iconoFavicon || contentData.brand?.iconImage || contentData.brand?.logoImage || '';
-    if (!favicon.parentNode) document.head.appendChild(favicon);
-
     const appleIcon = document.querySelector('link[rel="apple-touch-icon"]') || document.createElement('link');
     appleIcon.rel = 'apple-touch-icon';
-    appleIcon.href = contentData.brand?.iconImage || contentData.brand?.logoImage || '';
+    appleIcon.href = normalizeAssetPath(contentData.brand?.iconImage || 'images/icono_web.png?v=2');
     if (!appleIcon.parentNode) document.head.appendChild(appleIcon);
 
     renderHero(contentData.brand);
@@ -545,7 +540,7 @@ function renderMenu(categories, content) {
                     <div class="product-info">
                         <div class="product-header">
                             <h3 class="product-title">${item.name}</h3>
-                            <span class="product-price">${item.price}€</span>
+                            <span class="product-price">${formatProductPrice(item.price)}</span>
                         </div>
                         <p class="product-desc">${item.description}</p>
                         <div class="allergens">${allergensHtml}</div>

@@ -101,6 +101,12 @@ function getProductValue(product, field) {
     return (fieldMap[field] || [field]).map(key => product?.[key]).find(value => value !== undefined) || '';
 }
 
+function formatAdminPrice(price) {
+    const value = String(price ?? '').trim();
+    if (!value) return '';
+    return /€|eur(?:os?)?/i.test(value) ? value : `${value} €`;
+}
+
 function getProductAllergens(product) {
     const values = product?.alergenos ?? product?.allergens;
     return Array.isArray(values) ? values : [];
@@ -183,7 +189,7 @@ function renderCategoryEditor() {
         return `
         <details class="admin-product-card" ${visibleIndex === 0 ? 'open' : ''}>
             <summary class="admin-product-summary">
-                <span><strong>${escapeHtml(getProductValue(product, 'name') || `Producto ${index + 1}`)}</strong><small>Producto ${index + 1} · ${escapeHtml(getProductValue(product, 'price'))} €</small></span>
+                <span><strong>${escapeHtml(getProductValue(product, 'name') || `Producto ${index + 1}`)}</strong><small>Producto ${index + 1} · ${escapeHtml(formatAdminPrice(getProductValue(product, 'price')))}</small></span>
                 <i class="fas fa-chevron-down"></i>
             </summary>
             <div class="admin-product-body">
@@ -193,9 +199,9 @@ function renderCategoryEditor() {
                 </div>
                 <div class="admin-form-grid">
                 ${createInput('Nombre', getProductValue(product, 'name'), `data-product-field="name" data-product-index="${index}"`)}
-                ${createInput('Precio', getProductValue(product, 'price'), `data-product-field="price" data-product-index="${index}" type="number" step="0.01"`)}
+                ${createInput('Precio o rango', getProductValue(product, 'price'), `data-product-field="price" data-product-index="${index}" type="text" inputmode="text" placeholder="Ej.: 3 a 15 € o 3, 8 y 2 €"`)}
                 <label class="admin-field-wide">Descripción<textarea rows="2" data-product-field="description" data-product-index="${index}">${escapeHtml(getProductValue(product, 'description'))}</textarea></label>
-                ${createInput('Imagen', getProductValue(product, 'image'), `data-product-field="image" data-product-index="${index}"`)}
+                ${createInput('Imagen o URL', getProductValue(product, 'image'), `data-product-field="image" data-product-index="${index}" type="url" placeholder="https://ejemplo.com/imagen.jpg"`)}
                 ${createAllergenSelect(product, index)}
                 </div>
             </div>
