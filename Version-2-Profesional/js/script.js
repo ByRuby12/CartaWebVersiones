@@ -195,7 +195,7 @@ function updatePageMetadata(contentData) {
     const favicon = document.querySelector('link[rel="icon"]') || document.createElement('link');
     favicon.rel = 'icon';
     favicon.type = 'image/x-icon';
-    favicon.href = contentData.favicon || contentData.iconoFavicon || contentData.brand?.iconImage || contentData.brand?.logoImage || '';
+    favicon.href = contentData.favicon || contentData.iconoFavicon || contentData.brand?.iconImage || contentData.brand?.logoImage || 'images/icono_web.png';
     if (!favicon.parentNode) document.head.appendChild(favicon);
 }
 
