@@ -1643,6 +1643,70 @@ body.admin-is-open {
     width: 100%;
 }
 
+.admin-password-panel {
+    margin: 0 auto 24px;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    background: var(--bg-color);
+}
+
+.admin-password-panel summary {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 14px;
+    color: var(--text-main);
+    cursor: pointer;
+    font-size: 0.84rem;
+    font-weight: 800;
+    list-style: none;
+}
+
+.admin-password-panel summary::-webkit-details-marker {
+    display: none;
+}
+
+.admin-password-panel summary i {
+    color: var(--primary);
+}
+
+.admin-password-form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding: 0 14px 14px;
+}
+
+.admin-password-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: var(--text-main);
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.admin-password-form input {
+    width: 100%;
+    padding: 10px 11px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text-main);
+    font: inherit;
+    font-weight: 400;
+}
+
+.admin-password-form .admin-status {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+.admin-password-form .admin-primary-button {
+    grid-column: 1 / -1;
+    justify-self: end;
+}
+
 .admin-dashboard-card .admin-save-state {
     justify-content: center;
     text-align: center;
@@ -1946,8 +2010,13 @@ body.admin-is-open {
 
     .admin-form-grid,
     .admin-category-fields,
-    .admin-repeat-fields {
+    .admin-repeat-fields,
+    .admin-password-form {
         grid-template-columns: 1fr;
+    }
+
+    .admin-password-form .admin-primary-button {
+        width: 100%;
     }
 
     .admin-field-wide,

@@ -33,6 +33,8 @@ const socialEditor = document.getElementById('adminSocialEditor');
 const categorySelect = document.getElementById('adminCategorySelect');
 const categoryEditor = document.getElementById('adminCategoryEditor');
 const status = document.getElementById('adminStatus');
+const passwordForm = document.getElementById('adminPasswordForm');
+const passwordStatus = document.getElementById('adminPasswordStatus');
 
 async function loadAdminJson(path, fallback) {
     const firebaseKey = path.includes('content_en') ? 'content-en' : path.includes('menu_en') ? 'menu-en' : path.includes('content') ? 'content-es' : 'menu-es';
@@ -235,6 +237,12 @@ function renderAll() {
 
 function setStatus(message) {
     status.textContent = message;
+}
+
+function setPasswordStatus(message, isError = false) {
+    if (!passwordStatus) return;
+    passwordStatus.textContent = message;
+    passwordStatus.classList.toggle('admin-error', isError);
 }
 
 function setSaveState(connected, message) {
@@ -478,6 +486,45 @@ if (!window.firebaseAuth) {
 
     document.getElementById('adminLogoutButton').addEventListener('click', () => {
         window.firebaseAuth.signOut().finally(() => window.location.replace('../login/'));
+    });
+
+    passwordForm.addEventListener('submit', async event => {
+        event.preventDefault();
+        const currentPassword = document.getElementById('adminCurrentPassword').value;
+        const newPassword = document.getElementById('adminNewPassword').value;
+        const confirmPassword = document.getElementById('adminConfirmPassword').value;
+        const user = window.firebaseAuth.currentUser;
+
+        if (newPassword.length < 6) {
+            setPasswordStatus('La nueva contraseña debe tener al menos 6 caracteres.', true);
+            return;
+        }
+        if (newPassword !== confirmPassword) {
+            setPasswordStatus('Las nuevas contraseñas no coinciden.', true);
+            return;
+        }
+        if (!user?.email) {
+            setPasswordStatus('No hay una sesión de administrador activa.', true);
+            return;
+        }
+
+        try {
+            setPasswordStatus('Actualizando contraseña...');
+            const credential = window.firebase.auth.EmailAuthProvider.credential(user.email, currentPassword);
+            await user.reauthenticateWithCredential(credential);
+            await user.updatePassword(newPassword);
+            passwordForm.reset();
+            setPasswordStatus('Contraseña actualizada correctamente.');
+        } catch (error) {
+            const messages = {
+                'auth/invalid-credential': 'La contraseña actual no es correcta.',
+                'auth/wrong-password': 'La contraseña actual no es correcta.',
+                'auth/weak-password': 'La nueva contraseña es demasiado débil.',
+                'auth/requires-recent-login': 'Vuelve a iniciar sesión y prueba de nuevo.'
+            };
+            setPasswordStatus(messages[error.code] || 'No se pudo actualizar la contraseña.', true);
+            console.error('No se pudo actualizar la contraseña.', error);
+        }
     });
     });
 }

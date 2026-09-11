@@ -21,6 +21,17 @@
                 </div>
             </header>
 
+            <details class="admin-password-panel">
+                <summary><i class="fas fa-lock"></i> Cambiar contraseña</summary>
+                <form class="admin-password-form" id="adminPasswordForm">
+                    <label for="adminCurrentPassword">Contraseña actual<input id="adminCurrentPassword" type="password" autocomplete="current-password" required></label>
+                    <label for="adminNewPassword">Nueva contraseña<input id="adminNewPassword" type="password" minlength="6" autocomplete="new-password" required></label>
+                    <label for="adminConfirmPassword">Repetir nueva contraseña<input id="adminConfirmPassword" type="password" minlength="6" autocomplete="new-password" required></label>
+                    <p class="admin-status" id="adminPasswordStatus" role="status"></p>
+                    <button class="admin-primary-button" type="submit"><i class="fas fa-key"></i> Actualizar contraseña</button>
+                </form>
+            </details>
+
             <div class="admin-toolbar admin-top-toolbar">
                 <div class="admin-language-control">
                     <i class="fas fa-globe" aria-hidden="true"></i>
