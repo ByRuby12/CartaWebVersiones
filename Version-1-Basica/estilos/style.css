@@ -269,7 +269,7 @@ header {
 .language-toggle-btn {
   /* Estilo igualado a .lang-toggle de Version 2 */
   position: absolute;
-  top: 64px;
+  top: 12px;
   right: 18px;
   z-index: 999;
   width: 44px;
@@ -296,7 +296,7 @@ header {
 .language-toggle-btn:focus-visible { outline: 2px solid #2563eb; outline-offset: 2px; }
 
 @media (max-width: 820px) {
-  .language-toggle-btn { top: 60px; right: 14px; }
+  .language-toggle-btn { top: 12px; right: 14px; }
 }
 /* Evitar scroll horizontal navegable en el nav: permitir que los items hagan wrap y ocultar barras */
 .top-banner-mix, .nav-scroll-wrapper {
