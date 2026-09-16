@@ -1,0 +1,376 @@
+[
+  {
+    "categoria": "Coffees & Infusions",
+    "productos": [
+      { "nombre": "Espresso", "descripcion": "Strong espresso coffee served without milk.", "precio": "1,90€", "alergenos": ["free-alergenos"] },
+      { "nombre": "Iced Espresso", "descripcion": "Espresso served with ice, perfect to refresh.", "precio": "1,90€", "alergenos": ["free-alergenos"] },
+      { "nombre": "Americano", "descripcion": "Smooth, lighter coffee with extra water.", "precio": "1,90€", "alergenos": ["free-alergenos"] },
+      { "nombre": "Coffee with Milk", "descripcion": "Espresso mixed with hot milk.", "precio": "1,90€", "alergenos": ["lacteos"] },
+      { "nombre": "Cortado", "descripcion": "Espresso with a dash of milk.", "precio": "1,90€", "alergenos": ["lacteos"] },
+      { "nombre": "Espresso", "descripcion": "Concentrated coffee with strong flavor and intense aroma.", "precio": "1,90€", "alergenos": ["free-alergenos"] },
+      { "nombre": "Macchiato", "descripcion": "Coffee with a light touch of milk.", "precio": "1,90€", "alergenos": ["lacteos"] },
+      { "nombre": "Instant Decaf", "descripcion": "Instant decaffeinated coffee served fresh.", "precio": "1,90€", "alergenos": ["free-alergenos"] },
+      { "nombre": "Decaf with Milk", "descripcion": "Decaffeinated coffee served with hot milk.", "precio": "1,90€", "alergenos": ["lacteos"] },
+      { "nombre": "Decaf Cortado", "descripcion": "Decaf espresso with a small amount of milk.", "precio": "1,90€", "alergenos": ["lacteos"] },
+      { "nombre": "Decaf Macchiato", "descripcion": "Decaf coffee with a light touch of milk.", "precio": "1,90€", "alergenos": ["lacteos"] },
+      { "nombre": "Decaf Espresso", "descripcion": "Decaffeinated coffee without milk, with a mild flavor.", "precio": "1,90€", "alergenos": ["free-alergenos"] },
+      { "nombre": "Iced Decaf Espresso", "descripcion": "Decaf espresso served with ice.", "precio": "1,90€", "alergenos": ["free-alergenos"] },
+      { "nombre": "ColaCao", "descripcion": "Hot cocoa drink made with milk.", "precio": "2,00€", "alergenos": ["lacteos"] },
+      { "nombre": "Cappuccino", "descripcion": "Coffee with steamed milk foam and cocoa powder.", "precio": "3,90€", "alergenos": ["lacteos"] },
+      { "nombre": "Bombón Coffee", "descripcion": "Espresso served with condensed milk.", "precio": "2,10€", "alergenos": ["lacteos"] },
+      { "nombre": "Carajillo", "descripcion": "Espresso combined with a liquor, traditionally brandy or rum.", "precio": "2,60€", "alergenos": ["sulfitos"] },
+      { "nombre": "Thick Hot Chocolate", "descripcion": "Thick hot chocolate served with milk.", "precio": "3,00€", "alergenos": ["lacteos"] },
+      { "nombre": "Double Shot Espresso", "descripcion": "Espresso with a double coffee charge for a stronger taste.", "precio": "3,00€", "alergenos": ["free-alergenos"] },
+      { "nombre": "Irish Coffee", "descripcion": "Hot coffee with whisky, sugar and cream.", "precio": "3,90€", "alergenos": ["lacteos", "sulfitos"] },
+      { "nombre": "Viennese Coffee", "descripcion": "Espresso crowned with whipped cream.", "precio": "3,90€", "alergenos": ["lacteos"] },
+      { "nombre": "Glass of Milk", "descripcion": "Hot or cold glass of milk.", "precio": "1,30€", "alergenos": ["lacteos"] },
+      { "nombre": "Assorted Infusions", "descripcion": "A variety of natural infusions to enjoy at any time.", "precio": "1,90€", "alergenos": ["free-alergenos"] },
+      { "nombre": "Double Infusion", "descripcion": "Stronger infusion prepared with a double charge.", "precio": "3,00€", "alergenos": ["free-alergenos"] }
+    ]
+  },
+  {
+    "categoria": "Breakfast Deal | Mon-Fri 8-12",
+    "productos": [
+      {"nombre": "Soft Roll with Tomato and Olive Oil", "descripcion": "Toasted soft roll with fresh tomato and olive oil. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,50€", "alergenos": ["gluten"]},
+      {"nombre": "Baguette with Tomato and Olive Oil", "descripcion": "Crispy baguette with crushed tomato and olive oil. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,50€", "alergenos": ["gluten"]},
+      {"nombre": "Whole Wheat Baguette with Tomato and Olive Oil", "descripcion": "Whole wheat baguette with natural tomato and olive oil. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,60€", "alergenos": ["gluten"]},
+      {"nombre": "Soft Roll with Butter and Jam", "descripcion": "Toasted soft roll with butter and jam. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,50€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Baguette with Butter and Jam", "descripcion": "Toasted baguette with butter and jam. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,50€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Whole Wheat Baguette with Butter and Jam", "descripcion": "Whole wheat baguette with butter and jam. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,60€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Baguette with Tomato and Iberian Ham", "descripcion": "Baguette with tomato and Iberian ham. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,60€", "alergenos": ["gluten"]},
+      {"nombre": "Baguette with Bacon and Cheese", "descripcion": "Baguette with grilled bacon and melted cheese. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,60€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Whole Wheat Baguette with Tomato and Iberian Ham", "descripcion": "Whole wheat baguette with tomato and Iberian ham. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,70€", "alergenos": ["gluten"]},
+      {"nombre": "Whole Wheat Baguette with Bacon and Cheese", "descripcion": "Whole wheat baguette with bacon and melted cheese. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,70€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Soft Roll with Tomato and Iberian Ham", "descripcion": "Soft roll with tomato and Iberian ham. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,60€", "alergenos": ["gluten"]},
+      {"nombre": "Soft Roll with Bacon and Cheese", "descripcion": "Soft roll with bacon and melted cheese. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,60€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Chocolate Cake", "descripcion": "Homemade chocolate cake. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,10€", "alergenos": ["gluten","huevos","lacteos"]},
+      {"nombre": "Carrot Cake", "descripcion": "Soft carrot cake with spices. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,10€", "alergenos": ["gluten","huevos","lacteos"]},
+      {"nombre": "Sliced Bread Toast with Butter and Jam", "descripcion": "Toasted sliced bread with butter and jam. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,50€","alergenos": ["gluten","lacteos"]},
+      {"nombre": "Grilled Croissant", "descripcion": "Warm croissant lightly toasted on the griddle. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,60€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Mixed Croissant", "descripcion": "Croissant filled with ham and cheese. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,60€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Spanish Omelette Slice", "descripcion": "Classic Spanish omelette slice. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,40€", "alergenos": ["huevos"]},
+      {"nombre": "French Omelette (3 eggs)", "descripcion": "French omelette made with three eggs. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,40€", "alergenos": ["huevos"]},
+      {"nombre": "Mixed Sandwich", "descripcion": "Ham and melted cheese sandwich. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,60€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Pancakes with Cream and Syrup", "descripcion": "Fluffy pancakes with cream and syrup (chocolate, caramel or strawberry). Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "5,20€", "alergenos": ["gluten","lacteos","huevos","soja"]},
+      {"nombre": "Pastry: Donuts or Chocolate Croissant", "descripcion": "Selection of classic pastries of the day. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,30€", "alergenos": ["gluten","lacteos","huevos","soja"]}
+    ]
+  },
+  {
+    "categoria": "Breakfasts Without Offer",
+    "productos": [
+      {"nombre": "Soft Roll with Tomato and Olive Oil", "descripcion": "Soft roll with tomato and olive oil. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,20€", "alergenos": ["gluten"]},
+      {"nombre": "Baguette with Tomato and Olive Oil", "descripcion": "Baguette with tomato and olive oil. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,20€", "alergenos": ["gluten"]},
+      {"nombre": "Whole Wheat Baguette with Tomato and Olive Oil", "descripcion": "Whole wheat baguette with tomato and olive oil. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,30€", "alergenos": ["gluten"]},
+      {"nombre": "Soft Roll with Butter and Jam", "descripcion": "Soft roll with butter and jam. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,20€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Baguette with Butter and Jam", "descripcion": "Baguette with butter and jam. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,20€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Whole Wheat Baguette with Butter and Jam", "descripcion": "Whole wheat baguette with butter and jam. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,30€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Baguette with Tomato and Iberian Ham", "descripcion": "Baguette with tomato and Iberian ham. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,30€", "alergenos": ["gluten"]},
+      {"nombre": "Baguette with Bacon and Cheese", "descripcion": "Baguette with bacon and melted cheese. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,30€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Whole Wheat Baguette with Tomato and Iberian Ham", "descripcion": "Whole wheat baguette with tomato and Iberian ham. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,40€", "alergenos": ["gluten"]},
+      {"nombre": "Whole Wheat Baguette with Bacon and Cheese", "descripcion": "Whole wheat baguette with bacon and melted cheese. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,40€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Soft Roll with Tomato and Iberian Ham", "descripcion": "Soft roll with tomato and Iberian ham. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,30€", "alergenos": ["gluten"]},
+      {"nombre": "Soft Roll with Bacon and Cheese", "descripcion": "Soft roll with bacon and melted cheese. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,30€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Chocolate Cake", "descripcion": "Chocolate cake. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,00€", "alergenos": ["gluten","huevos","lacteos"]},
+      {"nombre": "Carrot Cake", "descripcion": "Carrot cake. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,00€", "alergenos": ["gluten","huevos","lacteos"]},
+      {"nombre": "Sliced Bread Toast with Butter and Jam", "descripcion": "Toasted sliced bread with butter and jam. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,10€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Plain Croissant", "descripcion": "Light and flaky plain croissant. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,00€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Grilled Croissant", "descripcion": "Croissant toasted on the griddle. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "2,30€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Ham and Cheese Croissant", "descripcion": "Croissant filled with ham and cheese. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,00€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Spanish Omelette Slice", "descripcion": "Spanish omelette slice. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,50€", "alergenos": ["huevos"]},
+      {"nombre": "French Omelette (2 eggs)", "descripcion": "French omelette with 2 eggs. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,50€", "alergenos": ["huevos"]},
+      {"nombre": "Mixed Sandwich", "descripcion": "Classic mixed sandwich. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "3,20€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Mixed Sandwich with Egg", "descripcion": "Mixed sandwich with extra egg. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,00€", "alergenos": ["gluten","lacteos","huevos"]},
+      {"nombre": "Vegetarian Mixed Sandwich", "descripcion": "Mixed sandwich with vegetables. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "5,10€", "alergenos": ["gluten","lacteos"]},
+      {"nombre": "Pancakes with Cream and Syrup", "descripcion": "Pancakes with cream and chocolate, caramel or strawberry syrup. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "4,20€", "alergenos": ["gluten","lacteos","huevos","soja"]},
+      {"nombre": "Pastry: Donuts or Chocolate Croissant", "descripcion": "Donuts or chocolate croissant/pastry. Extras available: bacon, ham, cheese (+1€), Iberian ham (+1,3€), egg (+1,2€).", "precio": "1,80€", "alergenos": ["gluten","lacteos","huevos","soja"]}
+    ]
+  },
+  {
+      "categoria": "Snacks",
+      "productos": [
+        {"nombre": "Homemade Ham Croquettes", "descripcion": "Homemade ham croquettes.", "precio": "12,40€", "alergenos": ["gluten", "lacteos", "huevos"]},
+        {"nombre": "Patatas Bravas with Aioli and Chicken", "descripcion": "Patatas bravas with aioli and chicken.", "precio": "12,80€", "alergenos": ["lacteos", "huevos"]},
+        {"nombre": "Patatas Bravas with Aioli", "descripcion": "Patatas bravas with aioli.", "precio": "9,90€", "alergenos": ["lacteos", "huevos"]},
+        {"nombre": "Grilled Pig's Ear", "descripcion": "Grilled pig's ear.", "precio": "12,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Bohio Nachos", "descripcion": "Nachos with cheddar, ground beef, pico de gallo, jalapeños, guacamole and sour cream.", "precio": "14,00€", "alergenos": ["lacteos"]},
+        {"nombre": "Chicken Fingers with Mustard Sauce", "descripcion": "Breaded chicken with mustard sauce.", "precio": "12,50€", "alergenos": ["gluten", "huevos"]},
+        {"nombre": "Chicken Wings in American Sauce", "descripcion": "Chicken wings in American sauce.", "precio": "9,50€", "alergenos": ["free-alergenos"]}
+      ]
+    },
+    {
+      "categoria": "From the Sea",
+      "productos": [
+        {"nombre": "Battered Squid Rings", "descripcion": "Battered squid rings.", "precio": "11,50€", "alergenos": ["gluten", "huevos", "crustaceos"]},
+        {"nombre": "Sautéed Baby Squid with Black Garlic Aioli", "descripcion": "Baby squid sautéed over caramelized onion with black garlic aioli, decorated with squid ink and aioli.", "precio": "17,60€", "alergenos": ["crustaceos", "huevos"]},
+        {"nombre": "Malaga-style Fried Seafood", "descripcion": "Fried seafood mix (Bienmesabe, baby squid, squid rings, anchovies).", "precio": "18,50€", "alergenos": ["gluten", "crustaceos", "huevos"]}
+      ]
+    },
+    {
+      "categoria": "Broken Eggs",
+      "productos": [
+        {"nombre": "Broken Eggs with Ham", "descripcion": "Broken eggs with Iberian ham.", "precio": "13,50€", "alergenos": ["huevos"]},
+        {"nombre": "Broken Eggs with Blood Sausage", "descripcion": "Broken eggs with blood sausage.", "precio": "13,50€", "alergenos": ["huevos"]},
+        {"nombre": "Broken Eggs with Crispy Bacon and Camembert Cream", "descripcion": "Broken eggs with bacon and camembert cream.", "precio": "13,50€", "alergenos": ["huevos", "lacteos"]}
+      ]
+    },
+    {
+      "categoria": "Toasts",
+      "productos": [
+        {"nombre": "Toast with Ham and Tomato Bread", "descripcion": "Toast with ham and tomato bread.", "precio": "8,90€", "alergenos": ["gluten"]},
+        {"nombre": "Toast with Prawns and Gulas with Aioli", "descripcion": "Toast with prawns and gulas.", "precio": "8,90€", "alergenos": ["gluten", "crustaceos", "huevos"]},
+        {"nombre": "Goat Cheese Toast with Caramelized Onion", "descripcion": "Toast with goat cheese and caramelized onion.", "precio": "8,90€", "alergenos": ["gluten", "lacteos"]},
+        {"nombre": "Iberian Sirloin Toast with Caramelized Onion and PX Reduction", "descripcion": "Toast with Iberian sirloin, caramelized onion and PX reduction.", "precio": "8,90€", "alergenos": ["gluten"]},
+        {"nombre": "Iberian Sirloin Toast with Brie Cheese and PX Reduction", "descripcion": "Toast with Iberian sirloin, brie cheese and PX reduction.", "precio": "8,90€", "alergenos": ["gluten", "lacteos"]}
+      ]
+    },
+    {
+      "categoria": "Meats",
+      "productos": [
+        {"nombre": "Pork Tenderloin Tacos with Arugula, Red Onion and Tennessee Seasoning (3 units)", "descripcion": "Pork tenderloin tacos with arugula and red onion.", "precio": "13,50€", "alergenos": ["gluten"]},
+        {"nombre": "Sliced Beef Sirloin (500g) with Potatoes", "descripcion": "Sliced beef sirloin served with potatoes.", "precio": "28,95€", "alergenos": ["free-alergenos"]}
+      ]
+    },
+    {
+      "categoria": "Burgers",
+      "productos": [
+        {"nombre": "Beef Burger with Black Brioche, Bacon, Pickle and Cheddar Cheese", "descripcion": "Beef burger with cheddar cheese and bacon.", "precio": "12,50€", "alergenos": ["gluten", "lacteos"]},
+        {"nombre": "Chicken Burger with Black Brioche, Bacon and Cheddar Cheese", "descripcion": "Chicken burger with cheddar cheese and bacon.", "precio": "11,50€", "alergenos": ["gluten", "lacteos"]},
+        {"nombre": "Mini Beef Burgers with Colored Buns (4 units)", "descripcion": "Four mini beef burgers, juicy and full of flavor.", "precio": "11,20€", "alergenos": ["gluten"]
+        }
+      ]
+    },
+    {
+      "categoria": "Sides & Sauces",
+      "productos": [
+        {"nombre": "French Fries", "descripcion": "Classic french fries.", "precio": "3,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Potato Wedges", "descripcion": "Potato wedges.", "precio": "3,50€", "alergenos": ["free-alergenos"]}
+      ]
+    },
+    {
+      "categoria": "Salads",
+      "productos": [
+        {"nombre": "Russian Salad", "descripcion": "Salad with mayonnaise.", "precio": "9,60€", "alergenos": ["huevos"]},
+        {"nombre": "Goat Cheese Salad with Caramelized Onion and Modena Sauce", "descripcion": "Salad with goat cheese and Modena sauce.", "precio": "12,50€", "alergenos": ["lacteos"]},
+        {"nombre": "Tuna Belly Salad with Pink Tomato and Onion", "descripcion": "Salad with tuna belly, tomato and onion.", "precio": "13,90€", "alergenos": ["pescado"]},
+        {"nombre": "Cesar Salad 'Bohio Style'", "descripcion": "Cesar salad.", "precio": "12,50€", "alergenos": ["huevos", "pescado", "lacteos"]}
+      ]
+    },
+    {
+      "categoria": "Vegetable Dishes",
+      "productos": [
+        {"nombre": "Artichoke Flower with Crispy Ham and Duck Mousse", "descripcion": "Artichoke flower with ham and duck mousse.", "precio": "5,00€", "alergenos": ["lacteos", "huevos"]},
+        {"nombre": "Fresh Eggplant Sticks in Tempura", "descripcion": "Eggplant in tempura.", "precio": "13,50€", "alergenos": ["gluten", "huevos"]}
+      ]
+    },
+    {
+      "categoria": "Desserts",
+      "productos": [
+        {"nombre": "Death by Chocolate Cake", "descripcion": "Chocolate cake.", "precio": "6,50€", "alergenos": ["gluten", "huevos", "lacteos"]},
+        {"nombre": "New York Style Cheesecake", "descripcion": "New York style cheesecake.", "precio": "6,50€", "alergenos": ["gluten", "huevos", "lacteos"]},
+        {"nombre": "Homemade Nut Brownie with Ice Cream", "descripcion": "Brownie with walnuts and ice cream.", "precio": "6,50€", "alergenos": ["gluten", "huevos", "lacteos", "frutos"]}
+      ]
+    },
+    {
+    "categoria": "Soft Drinks & Other Beverages",
+    "productos": [
+      {"nombre": "Coca Cola", "descripcion": "Classic soda.", "precio": "2,90€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Coca Cola Zero", "descripcion": "Sugar-free soda.", "precio": "2,90€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Coca Cola Zero Zero", "descripcion": "Sugar-free and caffeine-free soda.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Fanta Orange", "descripcion": "Orange soda.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Fanta Lemon", "descripcion": "Lemon soda.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Aquarius Lemon", "descripcion": "Lemon-flavored isotonic drink.", "precio": "3,00€","alergenos": ["free-alergenos"]},
+      {"nombre": "Aquarius Orange", "descripcion": "Orange-flavored isotonic drink.", "precio": "3,00€","alergenos": ["free-alergenos"]},
+      {"nombre": "Fuze Tea Lemon", "descripcion": "Cold lemon tea.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Fuze Tea Passion Fruit", "descripcion": "Cold passion fruit tea.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Casera", "descripcion": "Soda drink.", "precio": "3,00€","alergenos": ["free-alergenos"]},
+      {"nombre": "Schweppes Lemon", "descripcion": "Lemon tonic.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Schweppes Orange", "descripcion": "Orange tonic.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Sprite", "descripcion": "Lime-lemon soda.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Bitter Kas", "descripcion": "Bitter-flavored soda.", "precio": "3,00€","alergenos": ["free-alergenos"]},
+      {"nombre": "Red Bull", "descripcion": "Energy drink.", "precio": "3,10€","alergenos": ["free-alergenos"]},
+      {"nombre": "Hibiscus Tonic", "descripcion": "Tonic water with hibiscus.", "precio": "3,60€","alergenos": ["free-alergenos"]},
+      {"nombre": "Schweppes Tonic", "descripcion": "Classic tonic water.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Mosto", "descripcion": "Sweet grape drink.", "precio": "3,00€","alergenos": ["free-alergenos"]},
+      {"nombre": "Tomato Juice", "descripcion": "Natural tomato juice.", "precio": "2,50€","alergenos": ["free-alergenos"]},
+      {"nombre": "Pineapple Juice", "descripcion": "Natural pineapple juice.", "precio": "2,50€","alergenos": ["free-alergenos"]},
+      {"nombre": "Peach Juice", "descripcion": "Natural peach juice.", "precio": "2,50€","alergenos": ["free-alergenos"]},
+      {"nombre": "Orange Juice", "descripcion": "Natural orange juice.", "precio": "2,50€","alergenos": ["free-alergenos"]},
+      {"nombre": "Summer Red Wine with Lemon", "descripcion": "Refreshing drink with wine and lemon.", "precio": "3,50€","alergenos": ["sulfitos"]},
+      {"nombre": "Summer Red Wine with Soda", "descripcion": "Refreshing drink with wine and soda.", "precio": "3,50€","alergenos": ["sulfitos"]},
+      {"nombre": "Sparkling Water", "descripcion": "Carbonated mineral water.", "precio": "3,00€","alergenos": ["free-alergenos"]},
+      {"nombre": "Water 1/2 Liter", "descripcion": "Natural mineral water.", "precio": "2,10€","alergenos": ["free-alergenos"]},
+      {"nombre": "Fresh Orange Juice", "descripcion": "Freshly squeezed orange juice.", "precio": "2,00€","alergenos": ["free-alergenos"]},
+      {"nombre": "Ginger Ale", "descripcion": "Ginger-flavored soda.", "precio": "3,10€","alergenos": ["free-alergenos"]}
+    ]
+  },
+  {
+    "categoria": "Beers",
+    "productos": [
+      {"nombre": "Estrella Pint", "descripcion": "Estrella beer pint, fresh and traditional.", "precio": "1,90€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella Double", "descripcion": "Double portion of Estrella beer.", "precio": "2,90€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella Double with Lemon", "descripcion": "Estrella beer with a touch of lemon.", "precio": "2,90€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella Double with Soda", "descripcion": "Estrella beer mixed with soda.", "precio": "2,90€","alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella Pitcher", "descripcion": "Large pitcher of Estrella beer.", "precio": "4,10€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella Lemon Pitcher", "descripcion": "Pitcher of Estrella beer with lemon.", "precio": "4,10€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella Soda Pitcher", "descripcion": "Pitcher of Estrella beer with soda.", "precio": "4,10€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella 1906 Pint", "descripcion": "Estrella 1906 beer pint with intense flavor.", "precio": "2,20€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella 1906 Double", "descripcion": "Double portion of Estrella 1906 beer.", "precio": "3,50€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella 1906 Double with Lemon", "descripcion": "Estrella 1906 beer with a touch of lemon.", "precio": "3,50€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella 1906 Double with Soda", "descripcion": "Estrella 1906 beer mixed with soda.", "precio": "3,50€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella 1906 Pitcher", "descripcion": "Large pitcher of Estrella 1906 beer.", "precio": "4,60€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella 1906 Lemon Pitcher", "descripcion": "Pitcher of Estrella 1906 beer with lemon.", "precio": "4,60€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella 1906 Soda Pitcher", "descripcion": "Pitcher of Estrella 1906 beer with soda.", "precio": "4,60€", "alergenos": ["free-alergenos"]}
+    ]
+  },
+  {
+    "categoria": "Bottles",
+    "productos": [
+      {"nombre": "Alhambra 1925 Bottle", "descripcion": "Alhambra 1925 beer bottle with intense and characteristic flavor.", "precio": "3,50€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella 0.0 Toasted Bottle", "descripcion": "Estrella 0.0 toasted non-alcoholic beer, with body and smooth flavor.", "precio": "2,95€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Estrella Non-Alcoholic Bottle", "descripcion": "Refreshing and light non-alcoholic Estrella beer.", "precio": "2,95€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Mahou 5 Estrellas Bottle", "descripcion": "Mahou 5 Estrellas beer with balanced classic flavor.", "precio": "2,95€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Radler Bottle", "descripcion": "Radler beer with refreshing lemon mix.", "precio": "2,95€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Heineken Bottle", "descripcion": "Heineken 33cl bottle with smooth and recognizable taste.", "precio": "3,50€", "alergenos": ["free-alergenos"]},
+      {"nombre": "Mahou Barrel", "descripcion": "Mahou beer on tap, with balanced and fresh flavor.", "precio": "4,00€", "alergenos": ["free-alergenos"]}
+    ]
+  },
+  {
+      "categoria": "White Wines",
+      "productos": [
+        {"nombre": "Alma de Valdeguera (Semi-sweet)", "descripcion": "Semi-sweet white wine. Price: (Glass/Bottle)", "precio": "3,00€ - 15,00€", "alergenos": ["sulfitos"]},
+        {"nombre": "Mara D.O Monterro (Godello)", "descripcion": "Godello white wine. Price: (Glass/Bottle)", "precio": "3,60€ - 18,50€", "alergenos": ["sulfitos"]},
+        {"nombre": "Marieta Albariño", "descripcion": "Albariño white wine. Price: (Glass/Bottle)", "precio": "3,50€ - 18,50€", "alergenos": ["sulfitos"]},
+        {"nombre": "Bicus D.O Rías Baixas (Albariño)", "descripcion": "Albariño white wine. Price: (Glass/Bottle)", "precio": "3,00€ - 16,00€", "alergenos": ["sulfitos"]}
+      ]
+    },
+    {
+      "categoria": "Red Wines",
+      "productos": [
+        {"nombre": "Cibus (Crianza) Ribera del Duero", "descripcion": "Red crianza wine. Price: (Glass/Bottle)", "precio": "2,90€ - 15,00€", "alergenos": ["sulfitos"]},
+        {"nombre": "El Coto (Crianza) Rioja", "descripcion": "Rioja crianza red wine. Price: (Glass/Bottle)", "precio": "3,20€ - 16,50€", "alergenos": ["sulfitos"]},
+        {"nombre": "Alcorta (Tempranillo Crianza) Rioja", "descripcion": "Rioja crianza red wine. Price: (Glass/Bottle)", "precio": "2,90€ - 15,00€", "alergenos": ["sulfitos"]}
+      ]
+    },
+    {
+      "categoria": "Rosé Wine",
+      "productos": [
+        {"nombre": "Peñascal", "descripcion": "Delicate rosé wine with fruity aromas and fresh mouthfeel. Price: (Glass/Bottle)", "precio": "2,50€ - 12,00€", "alergenos": ["sulfitos"]}
+      ]
+    },
+    {
+      "categoria": "Vermouth",
+      "productos": [
+        {"nombre": "Martini Red", "descripcion": "Classic red vermouth, ideal for an aperitif. Price: Glass", "precio": "3,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Martini White", "descripcion": "Smooth and aromatic white vermouth. Price: Glass", "precio": "3,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Izaguirre Red", "descripcion": "Red vermouth with intense character and spiced notes. Price: Glass", "precio": "2,90€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Boca Manga", "descripcion": "House special vermouth, aromatic and refreshing. Price: Glass", "precio": "3,50€", "alergenos": ["free-alergenos"]}
+      ]
+    },
+    {
+      "categoria": "Cocktails",
+      "productos": [
+        {"nombre": "Mojito", "descripcion": "Refreshing cocktail with rum, lime, mint and soda. Price: Cocktail Glass", "precio": "7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Malibu", "descripcion": "Sweet and tropical cocktail with coconut rum. Price: Cocktail Glass", "precio": "6,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Aperol", "descripcion": "Vibrant and refreshing cocktail with Aperol and bubbles. Price: Cocktail Glass", "precio": "7,00€", "alergenos": ["free-alergenos"]}
+      ]
+    },
+    {
+      "categoria": "Liqueurs & Aperitifs",
+      "productos": [
+        {"nombre": "Baileys", "descripcion": "Creamy Irish coffee and chocolate liqueur. Price: (Shot/Glass Baileys)", "precio": "2,70€ - 4,50€", "alergenos": ["lacteos"]},
+        {"nombre": "Ruavieja Herbal Liqueur", "descripcion": "Exquisite herbal liqueur with aromatic herbs. Price: (Shot/Glass Herbs)", "precio": "2,50€ - 4,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Ruavieja White Orujo", "descripcion": "Pure traditional white orujo. Price: (Shot/Glass White Orujo)", "precio": "2,50€ - 4,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Ruavieja Coffee Liqueur", "descripcion": "Intense and aromatic coffee liqueur. Price: (Shot/Glass Coffee)", "precio": "2,50€ - 4,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Ruavieja Cream", "descripcion": "Creamy liqueur ideal for desserts or coffee. Price: (Shot/Glass Coffee)", "precio": "2,50€ - 4,00€", "alergenos": ["lacteos"]},
+        {"nombre": "Ruavieja Pacharán", "descripcion": "Traditional sloe berry liqueur. Price: (Shot/Glass Pacharán)", "precio": "2,50€ - 4,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Jagermeister", "descripcion": "German herbal liqueur with intense spiced flavor. Price: (Shot/Small Glass/Glass)", "precio": "2,50€ - 4,70€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Soberano", "descripcion": "Brandy with a smooth and balanced aroma. Price: (Shot/Small Glass/Glass)", "precio": "2,00€ - 3,00€ - 6,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Terry", "descripcion": "Quality brandy with a soft aromatic touch. Price: (Shot/Small Glass/Glass)", "precio": "2,10€ - 3,20€ - 6,20€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Castellana", "descripcion": "Balanced traditional liqueur. Price: (Shot/Glass Castellana)", "precio": "2,00€ - 3,20€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Sin Apple Liqueur", "descripcion": "Refreshing apple liqueur. Price: (Shot/Glass Apple)", "precio": "2,00€ - 3,20€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Sin Peach Liqueur", "descripcion": "Sweet peach liqueur. Price: (Shot/Glass Peach)", "precio": "2,00€ - 3,20€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Apple Liqueur", "descripcion": "Fresh and aromatic apple liqueur. Price: (Shot/Glass Apple)", "precio": "2,00€ - 3,20€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Peach Liqueur", "descripcion": "Sweet and fruity peach liqueur. Price: (Shot/Glass Peach)", "precio": "2,00€ - 3,20€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Jose Cuervo", "descripcion": "Classic tequila with authentic flavor. Price: (Shot/Glass Jose Cuervo)", "precio": "2,50€ - 3,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Frangelico", "descripcion": "Hazelnut liqueur with a sweet and elegant aroma. Price: (Glass Frangelico)", "precio": "4,00€", "alergenos": ["frutos"]},
+        {"nombre": "Limoncello", "descripcion": "Refreshing lemon liqueur. Price: (Shot/Glass Limoncello)", "precio": "2,00€ - 3,20€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Cointreau", "descripcion": "Orange liqueur with a balanced, bright flavor. Price: (Glass Cointreau)", "precio": "4,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Disaronno", "descripcion": "Almond liqueur with a sweet and elegant touch. Price: (Glass Disaronno)", "precio": "5,00€", "alergenos": ["frutos"]}
+      ]
+    },
+    {
+      "categoria": "Whiskies",
+      "productos": [
+        {"nombre": "White Label", "descripcion": "Smooth and balanced whisky. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Johnnie Walker Red", "descripcion": "Classic, light and easy-to-drink whisky. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Johnnie Walker Black", "descripcion": "Intense and aromatic whisky with body and character. Price: (Shot/Glass/Mixed)", "precio": "3,50€ - 6,00€ - 9,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "DYK", "descripcion": "Balanced and smooth whisky. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "JB", "descripcion": "Light and easy-to-drink whisky. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Cutty Sark", "descripcion": "Delicate aroma whisky with smooth flavor. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Chivas Regal", "descripcion": "Premium whisky with rounded and elegant flavor. Price: (Shot/Glass/Mixed)", "precio": "3,20€ - 5,00€ - 9,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Ballantines", "descripcion": "Smooth whisky with sweet notes. Price: (Shot/Glass/Mixed)", "precio": "2,50€ - 5,00€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Jim Beam", "descripcion": "Bourbon whisky with intense aroma and a light sweet touch. Price: (Shot/Glass/Mixed)", "precio": "2,20€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Cardhu", "descripcion": "Smooth and fruity Scotch malt whisky. Price: (Shot/Glass/Mixed)", "precio": "4,00€ - 8,00€ - 11,00€", "alergenos": ["free-alergenos"]}
+      ]
+    },
+    {
+      "categoria": "Rums",
+      "productos": [
+        {"nombre": "Brugal Añejo", "descripcion": "Aged rum with smooth caramel and vanilla notes. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Havana 7", "descripcion": "Premium rum with deep flavor, oak and spice aromas. Price: (Shot/Glass/Mixed)", "precio": "3,00€ - 4,70€ - 7,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Legendario", "descripcion": "Dark aromatic rum with cocoa and dried fruit notes. Price: (Shot/Glass/Mixed)", "precio": "3,00€ - 4,70€ - 7,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Pampero", "descripcion": "Venezuelan rum with a perfect balance of sweetness and body. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Barceló Añejo", "descripcion": "Slow-aged rum with soft and rounded aromas. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,50€ - 7,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Bacardi White", "descripcion": "Light and versatile white rum, perfect for cocktails. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Santa Teresa", "descripcion": "Elegant Venezuelan rum with sweet and fruity notes. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Cacique", "descripcion": "Smooth rum with honey aroma and a light, lingering finish. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Areucas", "descripcion": "Light and pleasant rum, ideal alone or in mixed drinks. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Zacapa 23 Solera", "descripcion": "Premium Guatemalan rum aged in oak barrels. Price: (Shot/Glass/Mixed)", "precio": "4,50€ - 8,00€ - 12,00€", "alergenos": ["free-alergenos"]}
+      ]
+    },
+    {
+      "categoria": "Gins & Vodka",
+      "productos": [
+        {"nombre": "Beefeater", "descripcion": "Classic London gin with intense botanical notes. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,95€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Larios", "descripcion": "Smooth and balanced gin. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 6,95€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Tanqueray", "descripcion": "Aromatic gin with a powerful and balanced flavor. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,95€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Bombay Sapphire", "descripcion": "Premium gin with delicate juniper and spice notes. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,95€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Seagram's", "descripcion": "Light and versatile gin, perfect for mixed drinks. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 6,95€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Hendrick's", "descripcion": "Premium gin with cucumber and rose notes, sophisticated and elegant. Price: (Shot/Glass/Mixed)", "precio": "3,00€ - 5,00€ - 8,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Martin Miller's", "descripcion": "Smooth and refined gin with citrus aroma. Price: (Shot/Glass/Mixed)", "precio": "3,50€ - 5,00€ - 8,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Brockmans", "descripcion": "Fruity and aromatic gin with notes of cranberry and citrus. Price: (Shot/Glass/Mixed)", "precio": "3,50€ - 5,00€ - 8,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Smirnoff", "descripcion": "Smooth neutral vodka, ideal for mixed drinks and cocktails. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Buldog", "descripcion": "Aromatic gin with intense juniper and botanical notes. Price: (Shot/Glass/Mixed)", "precio": "3,50€ - 5,00€ - 8,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Nordés", "descripcion": "Galician gin with delicate floral and herbal notes. Price: (Shot/Glass/Mixed)", "precio": "2,50€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Puerto de Indias", "descripcion": "Smooth gin with intense natural strawberry aroma. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Absolut", "descripcion": "Pure and clean vodka with a smooth neutral flavor. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,20€ - 7,00€", "alergenos": ["free-alergenos"]},
+        {"nombre": "G'Vine", "descripcion": "Refined French gin with grape and floral notes. Price: (Shot/Glass/Mixed)", "precio": "3,50€ - 5,00€ - 8,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Larios 12", "descripcion": "Smooth gin with delicate herbal and citrus aroma. Price: (Shot/Glass/Mixed)", "precio": "2,00€ - 4,00€ - 7,50€", "alergenos": ["free-alergenos"]},
+        {"nombre": "Mombasa", "descripcion": "Aromatic gin with exotic and spiced touches. Price: (Shot/Glass/Mixed)", "precio": "3,50€ - 5,00€ - 8,50€", "alergenos": ["free-alergenos"]}
+      ]
+    },
+  {
+    "categoria": "Galería",
+    "productos": [ 
+      {"nombre": "Imagen 1", "descripcion": "Descripción de la imagen 1", "url": "imagenes/imagen1.png"},
+      {"nombre": "Imagen 2", "descripcion": "Descripción de la imagen 1", "url": "imagenes/imagen2.png"},
+      {"nombre": "Imagen 3", "descripcion": "Descripción de la imagen 2", "url": "imagenes/imagen3.png"},
+      {"nombre": "Imagen 4", "descripcion": "Descripción de la imagen 2", "url": "imagenes/imagen4.png"},
+      {"nombre": "Imagen 5", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen5.png"},
+      {"nombre": "Imagen 6", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen6.png"},
+      {"nombre": "Imagen 7", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen7.png"},
+      {"nombre": "Imagen 8", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen8.png"},
+      {"nombre": "Imagen 9", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen9.png"},
+      {"nombre": "Imagen 10", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen10.png"},
+      {"nombre": "Imagen 11", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen11.png"},
+      {"nombre": "Imagen 12", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen12.png"},
+      {"nombre": "Imagen 13", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen13.png"},
+      {"nombre": "Imagen 14", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen14.png"},
+      {"nombre": "Imagen 15", "descripcion": "Descripción de la imagen 3", "url": "imagenes/imagen15.png"}
+    ]
+  },
+  {
+    "categoria": "Contact",
+    "productos": []
+  }
+]
