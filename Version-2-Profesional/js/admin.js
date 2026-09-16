@@ -17,6 +17,19 @@ const ALLERGEN_OPTIONS = [
     ['altramuces', 'Altramuces'],
     ['free-alergenos', 'Sin alérgenos']
 ];
+const MANAGED_LINKS = {
+    social: [
+        { key: 'instagram', name: 'Instagram', icon: 'fab fa-instagram', color: '#E4405F' },
+        { key: 'tiktok', name: 'TikTok', icon: 'fab fa-tiktok', color: '#000000' },
+        { key: 'facebook', name: 'Facebook', icon: 'fab fa-facebook-f', color: '#1877F2' },
+        { key: 'whatsapp', name: 'WhatsApp', icon: 'fab fa-whatsapp', color: '#25D366' }
+    ],
+    delivery: [
+        { key: 'just-eat', name: 'Just Eat', logoUrl: 'https://cdn.simpleicons.org/justeat', icon: 'fas fa-motorcycle', url: 'https://www.just-eat.es/' },
+        { key: 'uber-eats', name: 'Uber Eats', logoUrl: 'https://cdn.simpleicons.org/ubereats', icon: 'fab fa-uber', url: 'https://www.ubereats.com/es' },
+        { key: 'glovo', name: 'Glovo', logoUrl: 'https://cdn.simpleicons.org/glovo', icon: 'fas fa-bicycle', url: 'https://glovoapp.com/es/es/' }
+    ]
+};
 
 let adminContent = defaultContent;
 let adminMenu = defaultMenu;
@@ -33,6 +46,8 @@ const socialEditor = document.getElementById('adminSocialEditor');
 const categorySelect = document.getElementById('adminCategorySelect');
 const categoryEditor = document.getElementById('adminCategoryEditor');
 const status = document.getElementById('adminStatus');
+const statusText = document.getElementById('adminStatusText');
+const statusIcon = document.getElementById('adminStatusIcon');
 const passwordForm = document.getElementById('adminPasswordForm');
 const passwordStatus = document.getElementById('adminPasswordStatus');
 
@@ -65,6 +80,22 @@ function syncContactPhoneLink() {
     const telephone = adminContent.contact?.telephone || '';
     adminContent.contact ||= {};
     adminContent.contact.bookUrl = telephone ? `tel:${String(telephone).replace(/[^\d+]/g, '')}` : '';
+}
+
+function ensureDeliveryServices() {
+    adminContent.contact ||= {};
+    const existingServices = Array.isArray(adminContent.contact.deliveryServices)
+        ? adminContent.contact.deliveryServices
+        : Array.isArray(adminContent.contact.serviciosEntrega)
+            ? adminContent.contact.serviciosEntrega
+            : [];
+
+    MANAGED_LINKS.delivery.forEach(definition => {
+        const exists = existingServices.some(service => service.key === definition.key || service.name?.toLowerCase() === definition.name.toLowerCase());
+        if (!exists) existingServices.push({ ...definition });
+    });
+
+    adminContent.contact.deliveryServices = existingServices;
 }
 
 function getCategories() {
@@ -148,19 +179,34 @@ function renderBusinessForm() {
 }
 
 function renderSocials() {
-    const socials = Array.isArray(adminContent.footer?.social) ? adminContent.footer.social : [];
-    socialEditor.innerHTML = socials.map((social, index) => `
+    adminContent.footer ||= {};
+    adminContent.footer.social ||= [];
+    adminContent.contact ||= {};
+    adminContent.contact.deliveryServices ||= [];
+
+    const findLink = (links, definition) => links.find(link => link.key === definition.key || link.name?.toLowerCase() === definition.name.toLowerCase()) || definition;
+    const linkMarkup = (definition, link, type) => `
         <article class="admin-repeat-card">
-            <div class="admin-repeat-icon" style="--social-color: ${escapeHtml(social.color || '#e85d04')};"><i class="${escapeHtml(social.icon || 'fas fa-link')}"></i></div>
-            <div class="admin-repeat-fields">
-                ${createInput('Nombre', social.name, `data-social-field="name" data-social-index="${index}"`)}
-                ${createInput('Icono Font Awesome', social.icon, `data-social-field="icon" data-social-index="${index}"`)}
-                ${createInput('Enlace', social.url, `data-social-field="url" data-social-index="${index}"`)}
-                ${createInput('Color', social.color, `data-social-field="color" data-social-index="${index}" type="text"`)}
+            <div class="admin-repeat-icon ${type === 'delivery' ? 'admin-delivery-icon' : ''}" style="--social-color: ${escapeHtml(link.color || definition.color || '#e85d04')};">
+                ${type === 'delivery' && definition.logoUrl
+                    ? `<img src="${escapeHtml(definition.logoUrl)}" alt="Logotipo de ${escapeHtml(definition.name)}">`
+                    : `<i class="${escapeHtml(definition.icon)}"></i>`}
             </div>
-            <button class="admin-danger-button" type="button" data-remove-social="${index}" aria-label="Eliminar red"><i class="fas fa-trash"></i></button>
+            <div class="admin-repeat-fields">
+                <strong>${definition.name}</strong>
+                ${createInput('Enlace', link.url, `data-managed-link="${type}" data-link-key="${definition.key}"`)}
+            </div>
         </article>
-    `).join('');
+    `;
+
+    const socialMarkup = MANAGED_LINKS.social
+        .map(definition => linkMarkup(definition, findLink(adminContent.footer.social, definition), 'social'))
+        .join('');
+    const deliveryMarkup = MANAGED_LINKS.delivery
+        .map(definition => linkMarkup(definition, findLink(adminContent.contact.deliveryServices, definition), 'delivery'))
+        .join('');
+
+    socialEditor.innerHTML = socialMarkup + deliveryMarkup;
 }
 
 function renderCategorySelector() {
@@ -241,8 +287,19 @@ function renderAll() {
     renderAdvancedEditors();
 }
 
-function setStatus(message) {
-    status.textContent = message;
+function setStatus(message, state = '') {
+    if (!status) return;
+    if (statusText) statusText.textContent = message;
+    else status.textContent = message;
+    status.classList.remove('is-saving', 'is-success', 'is-error');
+    if (state) status.classList.add(`is-${state}`);
+    if (statusIcon) {
+        statusIcon.className = 'admin-status-icon';
+        if (state === 'saving') statusIcon.classList.add('fas', 'fa-spinner', 'fa-spin');
+        if (state === 'success') statusIcon.classList.add('fas', 'fa-check');
+        if (state === 'error') statusIcon.classList.add('fas', 'fa-circle-exclamation');
+        if (state === 'pending') statusIcon.classList.add('fas', 'fa-xmark');
+    }
 }
 
 function setPasswordStatus(message, isError = false) {
@@ -266,9 +323,7 @@ async function saveData(silent = false) {
     const menuPath = language === 'en' ? 'data/menu_en.json' : 'data/menu.json';
     renderAdvancedEditors();
     if (silent) {
-        clearTimeout(cloudSaveTimer);
-        cloudSaveTimer = setTimeout(() => saveData(false), 600);
-        setStatus('Guardando cambios...');
+        setStatus('Cambios pendientes de guardar.', 'pending');
         return;
     }
 
@@ -279,13 +334,13 @@ async function saveData(silent = false) {
                 window.firebaseDb.collection('siteData').doc(firebaseKey(contentPath)).set({ payload: adminContent, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() }),
                 window.firebaseDb.collection('siteData').doc(firebaseKey(menuPath)).set({ payload: adminMenu, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() })
             ]);
-            setStatus('Cambios guardados en Firebase.');
+            setStatus('Cambios guardados en Firebase.', 'success');
             firebaseReachable = true;
             setSaveState(true, 'Sincronizado con Firebase');
             return;
         } catch (error) {
             console.error('No se pudieron guardar los cambios en Firebase.', error);
-            setStatus('No se pudieron guardar los cambios en Firebase. Revisa las reglas y la sesión.');
+            setStatus('No se pudieron guardar los cambios en Firebase. Revisa las reglas y la sesión.', 'error');
             setSaveState(false, 'Firebase necesita revisar sus reglas');
             return;
         }
@@ -303,6 +358,7 @@ async function loadEditors() {
         loadAdminJson(contentPath, defaultContent),
         loadAdminJson(menuPath, defaultMenu)
     ]);
+    ensureDeliveryServices();
     syncContactPhoneLink();
     selectedCategoryIndex = 0;
     selectedProductPage = 0;
@@ -355,27 +411,19 @@ if (!window.firebaseAuth) {
     });
 
     socialEditor.addEventListener('input', event => {
-        const field = event.target.dataset.socialField;
-        const index = Number(event.target.dataset.socialIndex);
-        if (field) {
-            adminContent.footer.social[index][field] = event.target.value;
-            saveData(true);
+        const type = event.target.dataset.managedLink;
+        const key = event.target.dataset.linkKey;
+        if (!type || !key) return;
+
+        const definitions = MANAGED_LINKS[type];
+        const collection = type === 'social' ? adminContent.footer.social : adminContent.contact.deliveryServices;
+        const definition = definitions.find(item => item.key === key);
+        let index = collection.findIndex(link => link.key === key || link.name?.toLowerCase() === definition.name.toLowerCase());
+        if (index < 0) {
+            collection.push({ ...definition, url: '' });
+            index = collection.length - 1;
         }
-    });
-
-    socialEditor.addEventListener('click', event => {
-        const button = event.target.closest('[data-remove-social]');
-        if (!button) return;
-        adminContent.footer.social.splice(Number(button.dataset.removeSocial), 1);
-        renderSocials();
-        saveData(true);
-    });
-
-    document.getElementById('adminAddSocialButton').addEventListener('click', () => {
-        adminContent.footer ||= {};
-        adminContent.footer.social ||= [];
-        adminContent.footer.social.push({ name: 'Nueva red', icon: 'fas fa-link', url: '', color: '#e85d04' });
-        renderSocials();
+        collection[index].url = event.target.value;
         saveData(true);
     });
 

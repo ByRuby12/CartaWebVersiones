@@ -2,6 +2,12 @@ const defaultMenu = {
     categories: []
 };
 
+const DEFAULT_DELIVERY_SERVICES = [
+    { key: 'just-eat', name: 'Just Eat', logoUrl: 'https://cdn.simpleicons.org/justeat', icon: 'fas fa-motorcycle', url: 'https://www.just-eat.es/' },
+    { key: 'uber-eats', name: 'Uber Eats', logoUrl: 'https://cdn.simpleicons.org/ubereats', icon: 'fab fa-uber', url: 'https://www.ubereats.com/es' },
+    { key: 'glovo', name: 'Glovo', logoUrl: 'https://cdn.simpleicons.org/glovo', icon: 'fas fa-bicycle', url: 'https://glovoapp.com/es/es/' }
+];
+
 const defaultContent = {
     brand: {
         logo: '',
@@ -398,10 +404,19 @@ function normalizeContent(content) {
             reviewUrl: contact.reviewUrl || contact.urlResenas || content.enlaceGoogleMaps,
             bookUrl: contact.bookUrl || contact.urlReserva || contact.urlReservar || content.urlReserva || `tel:${contact.telephone || contact.telefono || content.telefono || ''}`,
             social: contact.social || contact.redes || buildSocialArray(content.redes) || buildSocialArray(contact.redes) || [],
+            deliveryServices: (Array.isArray(contact.deliveryServices)
+                ? contact.deliveryServices
+                : Array.isArray(contact.serviciosEntrega)
+                    ? contact.serviciosEntrega
+                    : DEFAULT_DELIVERY_SERVICES).map(service => {
+                        const defaultService = DEFAULT_DELIVERY_SERVICES.find(item => item.key === service.key || item.name === service.name) || {};
+                        return { ...defaultService, ...service, logoUrl: service.logoUrl || defaultService.logoUrl || '' };
+                    }),
             labels: {
                 address: contact.labels?.address || contact.labels?.direccion || 'Dirección',
                 hours: contact.labels?.hours || contact.labels?.horario || 'Horario',
-                email: contact.labels?.email || contact.labels?.correo || 'Correo'
+                email: contact.labels?.email || contact.labels?.correo || 'Correo',
+                services: contact.labels?.services || contact.labels?.servicios || (currentLang === 'en' ? 'Services' : 'Servicios')
             },
             buttons: {
                 review: contact.buttons?.review || contact.buttons?.reseña,
@@ -621,6 +636,23 @@ function renderHomeSection(home) {
 }
 
 function renderContactSection(contact) {
+    const deliveryServices = Array.isArray(contact.deliveryServices)
+        ? contact.deliveryServices.filter(service => service?.url && service.url.trim() && service.url.trim() !== '#')
+        : [];
+    const deliveryMarkup = deliveryServices.length ? `
+                <div class="contact-services">
+                    <strong class="section-label">${contact.labels.services}</strong>
+                    <div class="contact-services-list">
+                    ${deliveryServices.map(service => `
+                        <a href="${service.url}" target="_blank" rel="noopener noreferrer" class="contact-service-link">
+                            <span class="contact-service-logo"><img src="${normalizeAssetPath(service.logoUrl)}" alt="Logotipo de ${service.name}" loading="lazy"></span>
+                            <span class="contact-service-name">${service.name}</span>
+                        </a>
+                    `).join('')}
+                    </div>
+                </div>
+            ` : '';
+
     return `
         <div class="contact-grid">
             <div class="contact-card contact-main-card">
@@ -654,6 +686,7 @@ function renderContactSection(contact) {
                         </div>
                     </article>
                 </div>
+                ${deliveryMarkup}
                 <div class="contact-actions contact-actions-large">
                     <a href="${contact.reviewUrl}" target="_blank" rel="noopener noreferrer" class="btn-action btn-hero"><i class="fas fa-star"></i> ${contact.buttons.review || ''}</a>
                     <a href="${contact.bookUrl}" class="btn-action btn-contact-simple"><i class="fas fa-phone"></i> ${contact.buttons.book || ''}</a>

@@ -70,8 +70,7 @@
 
             <section class="admin-tab-panel" data-admin-panel="social" hidden>
                 <div class="admin-section-heading">
-                    <div><h2>Redes sociales</h2><p>Añade, cambia o elimina enlaces del pie de página.</p></div>
-                    <button class="admin-secondary-button" id="adminAddSocialButton" type="button"><i class="fas fa-plus"></i> Añadir red</button>
+                    <div><h2>Redes y pedidos online</h2><p>Configura los enlaces de Instagram, TikTok, Facebook, WhatsApp, Uber Eats y Glovo.</p></div>
                 </div>
                 <div id="adminSocialEditor" class="admin-repeat-list"></div>
             </section>
@@ -95,7 +94,10 @@
                 <label for="adminMenuEditor">Carta completa</label>
                 <textarea class="admin-json-editor admin-menu-editor" id="adminMenuEditor" spellcheck="false"></textarea>
             </details>
-            <p class="admin-status" id="adminStatus" role="status"></p>
+            <p class="admin-status" id="adminStatus" role="status" aria-live="polite">
+                <i class="admin-status-icon" id="adminStatusIcon" aria-hidden="true"></i>
+                <span id="adminStatusText"></span>
+            </p>
             <div class="admin-actions">
                 <button class="admin-secondary-button" id="adminExportButton" type="button"><i class="fas fa-download"></i> Descargar contenido</button>
                 <button class="admin-secondary-button" id="adminExportMenuButton" type="button"><i class="fas fa-list"></i> Descargar carta</button>

@@ -741,6 +741,75 @@ main {
     max-width: 440px;
 }
 
+.contact-services {
+    display: grid;
+    justify-items: center;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.contact-services .section-label {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    padding: 0.45rem 1rem;
+}
+
+.contact-services-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+}
+
+.contact-service-link {
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    min-width: 0;
+    padding: 14px 12px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+    color: var(--text-main);
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(16, 42, 67, 0.08);
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-service-link:hover {
+    border-color: var(--primary);
+    box-shadow: 0 14px 28px rgba(232, 93, 4, 0.16);
+    transform: translateY(-2px);
+}
+
+.contact-service-logo {
+    display: grid;
+    place-items: center;
+    width: 120px;
+    height: 42px;
+}
+
+.contact-service-logo img {
+    display: block;
+    max-width: 112px;
+    max-height: 36px;
+    width: auto;
+    height: auto;
+}
+
+.contact-service-name {
+    color: var(--text-main);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (max-width: 680px) {
+    .contact-services-list {
+        grid-template-columns: 1fr;
+    }
+}
+
 .contact-info-grid {
     display: grid;
     gap: 16px;
@@ -848,6 +917,19 @@ main {
 }
 
 @media (max-width: 680px) {
+    .category-section {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 8px;
+        padding-top: 14px;
+    }
+
+    .footer-inner {
+        gap: 12px;
+    }
+
     .contact-actions .btn-action {
         width: 100%;
         min-width: 0;
@@ -947,6 +1029,17 @@ footer, .footer-inner, .footer-social-label {
 .footer-social-link:hover {
     transform: translateY(-2px);
     opacity: 0.95;
+}
+
+@media (max-width: 680px) {
+    footer {
+        margin-top: 8px;
+        padding-top: 14px;
+    }
+
+    .footer-inner {
+        gap: 12px;
+    }
 }
 
 body.dark-mode .footer-social-link {
@@ -1305,6 +1398,18 @@ body.dark-mode .footer-social-link {
     color: #fff;
 }
 
+.admin-repeat-icon img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.admin-repeat-icon.admin-delivery-icon {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    color: var(--text-main);
+}
+
 .admin-repeat-fields {
     display: grid;
     flex: 1;
@@ -1529,6 +1634,47 @@ body.dark-mode .footer-social-link {
     min-height: 1.3em;
     color: var(--text-muted);
     font-size: 0.82rem;
+}
+
+#adminStatus {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#adminStatus.is-saving {
+    color: var(--primary);
+}
+
+#adminStatus.is-pending {
+    color: #b45309;
+}
+
+#adminStatus.is-success {
+    color: #198754;
+}
+
+#adminStatus.is-error {
+    color: #c2410c;
+}
+
+.admin-status-icon {
+    min-width: 1em;
+}
+
+#adminStatus.is-success .admin-status-icon {
+    animation: adminStatusCheck 0.35s ease-out;
+}
+
+@keyframes adminStatusCheck {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .admin-error {
