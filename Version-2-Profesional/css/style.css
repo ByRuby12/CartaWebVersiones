@@ -1359,6 +1359,26 @@ body.dark-mode .footer-social-link {
     gap: 16px;
 }
 
+.admin-product-heading-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.admin-category-delete {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.admin-small-button {
+    min-height: 34px;
+    padding: 7px 10px;
+    font-size: 0.78rem;
+}
+
 .admin-section-heading h2 {
     margin: 0;
     font-size: 1.15rem;
@@ -1440,6 +1460,76 @@ body.dark-mode .footer-social-link {
     cursor: pointer;
     font-size: 0.78rem;
     font-weight: 800;
+}
+
+.admin-confirm-overlay[hidden] {
+    display: none;
+}
+
+.admin-confirm-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgba(4, 11, 18, 0.68);
+    backdrop-filter: blur(8px);
+}
+
+.admin-confirm-dialog {
+    width: min(500px, 100%);
+    padding: 34px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface);
+    color: var(--text-main);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.admin-confirm-icon {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 14px;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(194, 65, 12, 0.12);
+    color: #c2410c;
+}
+
+.admin-confirm-dialog h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.admin-confirm-dialog p {
+    margin: 12px 0 22px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.admin-confirm-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.admin-confirm-actions .admin-danger-button,
+.admin-confirm-actions .admin-secondary-button {
+    min-width: 170px;
+    min-height: 42px;
+    padding: 10px 16px;
+    font-size: 0.86rem;
+}
+
+@media (max-width: 520px) {
+    .admin-confirm-actions .admin-danger-button,
+    .admin-confirm-actions .admin-secondary-button {
+        width: 100%;
+    }
 }
 
 .admin-menu-selector {
@@ -2163,6 +2253,10 @@ body.admin-is-open {
     .admin-repeat-fields,
     .admin-password-form {
         grid-template-columns: 1fr;
+    }
+
+    .admin-category-delete {
+        grid-column: auto;
     }
 
     .admin-password-form .admin-primary-button {

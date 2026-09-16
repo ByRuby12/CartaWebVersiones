@@ -25,9 +25,9 @@ const MANAGED_LINKS = {
         { key: 'whatsapp', name: 'WhatsApp', icon: 'fab fa-whatsapp', color: '#25D366' }
     ],
     delivery: [
-        { key: 'just-eat', name: 'Just Eat', logoUrl: 'https://cdn.simpleicons.org/justeat', icon: 'fas fa-motorcycle', url: 'https://www.just-eat.es/' },
-        { key: 'uber-eats', name: 'Uber Eats', logoUrl: 'https://cdn.simpleicons.org/ubereats', icon: 'fab fa-uber', url: 'https://www.ubereats.com/es' },
-        { key: 'glovo', name: 'Glovo', logoUrl: 'https://cdn.simpleicons.org/glovo', icon: 'fas fa-bicycle', url: 'https://glovoapp.com/es/es/' }
+        { key: 'just-eat', name: 'Just Eat', logoUrl: 'https://cdn.simpleicons.org/justeat', icon: 'fas fa-motorcycle', url: '' },
+        { key: 'uber-eats', name: 'Uber Eats', logoUrl: 'https://cdn.simpleicons.org/ubereats', icon: 'fab fa-uber', url: '' },
+        { key: 'glovo', name: 'Glovo', logoUrl: 'https://cdn.simpleicons.org/glovo', icon: 'fas fa-bicycle', url: '' }
     ]
 };
 
@@ -48,6 +48,9 @@ const categoryEditor = document.getElementById('adminCategoryEditor');
 const status = document.getElementById('adminStatus');
 const statusText = document.getElementById('adminStatusText');
 const statusIcon = document.getElementById('adminStatusIcon');
+const categoryDeleteModal = document.getElementById('adminCategoryDeleteModal');
+const categoryDeleteMessage = document.getElementById('adminCategoryDeleteMessage');
+let pendingCategoryDeleteIndex = -1;
 const passwordForm = document.getElementById('adminPasswordForm');
 const passwordStatus = document.getElementById('adminPasswordStatus');
 
@@ -98,6 +101,56 @@ function ensureDeliveryServices() {
     adminContent.contact.deliveryServices = existingServices;
 }
 
+function syncSharedSocialLinks(firstContent, secondContent) {
+    firstContent.footer ||= {};
+    secondContent.footer ||= {};
+    const firstSocials = Array.isArray(firstContent.footer.social) ? firstContent.footer.social : [];
+    const secondSocials = Array.isArray(secondContent.footer.social) ? secondContent.footer.social : [];
+    const merged = [];
+    const keys = [...new Set([...firstSocials, ...secondSocials].map(link => link.key || link.name?.toLowerCase()).filter(Boolean))];
+
+    keys.forEach(key => {
+        const firstLink = firstSocials.find(link => (link.key || link.name?.toLowerCase()) === key) || {};
+        const secondLink = secondSocials.find(link => (link.key || link.name?.toLowerCase()) === key) || {};
+        const preferred = Object.keys(firstLink).length ? firstLink : secondLink;
+        merged.push({
+            ...secondLink,
+            ...firstLink,
+            name: preferred.name || firstLink.name || secondLink.name || key,
+            icon: preferred.icon || firstLink.icon || secondLink.icon || '',
+            color: preferred.color || firstLink.color || secondLink.color || '',
+            url: preferred.url || ''
+        });
+    });
+
+    firstContent.footer.social = merged.map(link => ({ ...link }));
+    secondContent.footer.social = merged.map(link => ({ ...link }));
+}
+
+function syncSharedDeliveryLinks(firstContent, secondContent) {
+    firstContent.contact ||= {};
+    secondContent.contact ||= {};
+    const firstServices = Array.isArray(firstContent.contact.deliveryServices) ? firstContent.contact.deliveryServices : [];
+    const secondServices = Array.isArray(secondContent.contact.deliveryServices) ? secondContent.contact.deliveryServices : [];
+    const merged = MANAGED_LINKS.delivery.map(definition => {
+        const firstService = firstServices.find(service => service.key === definition.key || service.name?.toLowerCase() === definition.name.toLowerCase()) || {};
+        const secondService = secondServices.find(service => service.key === definition.key || service.name?.toLowerCase() === definition.name.toLowerCase()) || {};
+        const preferred = Object.keys(firstService).length ? firstService : secondService;
+        return {
+            ...definition,
+            ...secondService,
+            ...firstService,
+            key: definition.key,
+            name: definition.name,
+            logoUrl: definition.logoUrl,
+            url: preferred.url || ''
+        };
+    });
+
+    firstContent.contact.deliveryServices = merged.map(service => ({ ...service }));
+    secondContent.contact.deliveryServices = merged.map(service => ({ ...service }));
+}
+
 function getCategories() {
     return Array.isArray(adminMenu.categories) ? adminMenu.categories : [];
 }
@@ -108,6 +161,79 @@ function getCategoryName(category) {
 
 function getProducts(category) {
     return Array.isArray(category?.productos) ? category.productos : Array.isArray(category?.items) ? category.items : [];
+}
+
+function getCategoryId(category, index) {
+    return category?.identificador || category?.id || `category-${index}`;
+}
+
+function copySharedProductFields(sourceProduct, targetProduct) {
+    const sourcePrice = getProductValue(sourceProduct, 'price');
+    const targetPrice = getProductValue(targetProduct, 'price');
+    const sourceImage = getProductValue(sourceProduct, 'image');
+    const targetImage = getProductValue(targetProduct, 'image');
+    setProductValue(targetProduct, 'price', sourcePrice || targetPrice);
+    setProductValue(targetProduct, 'image', sourceImage || targetImage);
+
+    const allergens = getProductAllergens(sourceProduct);
+    const targetAllergens = getProductAllergens(targetProduct);
+    const allergenKey = Object.prototype.hasOwnProperty.call(targetProduct, 'allergens') ? 'allergens' : 'alergenos';
+    targetProduct[allergenKey] = allergens.length ? [...allergens] : [...targetAllergens];
+}
+
+function syncSharedMenuFields(sourceMenu, targetMenu, targetLanguage) {
+    targetMenu.categories ||= [];
+    const sourceCategories = getCategoriesFromMenu(sourceMenu);
+
+    targetMenu.categories = targetMenu.categories.filter((targetCategory, targetIndex) => {
+        const targetId = getCategoryId(targetCategory, targetIndex);
+        return sourceCategories.some((sourceCategory, sourceIndex) => getCategoryId(sourceCategory, sourceIndex) === targetId)
+            || targetIndex < sourceCategories.length;
+    });
+
+    sourceCategories.forEach((sourceCategory, categoryIndex) => {
+        const categoryId = getCategoryId(sourceCategory, categoryIndex);
+        let targetCategory = targetMenu.categories.find((category, index) => getCategoryId(category, index) === categoryId)
+            || targetMenu.categories[categoryIndex];
+        if (!targetCategory) {
+            targetCategory = {
+                identificador: sourceCategory.identificador || sourceCategory.id || categoryId,
+                nombre: targetLanguage === 'en' ? 'New category' : 'Nueva categoría',
+                productos: []
+            };
+            targetMenu.categories.push(targetCategory);
+        }
+
+        const sourceProducts = getProducts(sourceCategory);
+        const targetProducts = getProducts(targetCategory);
+        sourceProducts.forEach((sourceProduct, productIndex) => {
+            let targetProduct = targetProducts[productIndex];
+            if (!targetProduct) {
+                targetProduct = {
+                    nombre: '',
+                    descripcion: '',
+                    precio: '',
+                    imagen: '',
+                    alergenos: []
+                };
+                if (Array.isArray(targetCategory.productos)) targetCategory.productos.push(targetProduct);
+                else {
+                    targetCategory.items ||= [];
+                    targetCategory.items.push(targetProduct);
+                }
+            }
+            copySharedProductFields(sourceProduct, targetProduct);
+        });
+    });
+}
+
+function syncSharedMenuPairFields(firstMenu, secondMenu, secondLanguage) {
+    syncSharedMenuFields(firstMenu, secondMenu, secondLanguage);
+    syncSharedMenuFields(secondMenu, firstMenu, languageSelect.value === 'en' ? 'es' : 'en');
+}
+
+function getCategoriesFromMenu(menu) {
+    return Array.isArray(menu?.categories) ? menu.categories : [];
 }
 
 function setProductValue(product, field, value) {
@@ -241,7 +367,11 @@ function renderCategoryEditor() {
             <div class="admin-product-body">
                 <div class="admin-product-heading">
                     <strong>Datos del producto</strong>
+                    <div class="admin-product-heading-actions">
+                        ${index > 0 ? '<button class="admin-secondary-button admin-small-button" type="button" data-move-product-up="' + index + '" title="Subir producto"><i class="fas fa-arrow-up"></i> Subir</button>' : ''}
+                        ${index < products.length - 1 ? '<button class="admin-secondary-button admin-small-button" type="button" data-move-product-down="' + index + '" title="Bajar producto"><i class="fas fa-arrow-down"></i> Bajar</button>' : ''}
                     <button class="admin-danger-button" type="button" data-remove-product="${index}"><i class="fas fa-trash"></i> Eliminar</button>
+                    </div>
                 </div>
                 <div class="admin-form-grid">
                 ${createInput('Nombre', getProductValue(product, 'name'), `data-product-field="name" data-product-index="${index}"`)}
@@ -259,6 +389,9 @@ function renderCategoryEditor() {
         <div class="admin-category-fields">
             ${createInput('Nombre de la categoría', getCategoryName(category), 'data-category-field="name"')}
             ${createInput('Identificador interno', category.identificador || category.id || '', 'data-category-field="id"')}
+            <div class="admin-category-delete">
+                <button class="admin-danger-button" id="adminDeleteCategoryButton" type="button"><i class="fas fa-trash"></i> Eliminar categoría</button>
+            </div>
         </div>
         <div class="admin-section-heading admin-products-heading">
             <div><h2>Productos <span class="admin-count">${products.length}</span></h2></div>
@@ -317,6 +450,34 @@ function setSaveState(connected, message) {
     text.textContent = message;
 }
 
+function openCategoryDeleteModal(index) {
+    const category = getCategories()[index];
+    if (!category || !categoryDeleteModal) return;
+    pendingCategoryDeleteIndex = index;
+    const productCount = getProducts(category).length;
+    categoryDeleteMessage.textContent = productCount
+        ? `La categoría "${getCategoryName(category)}" tiene ${productCount} producto${productCount === 1 ? '' : 's'} asociado${productCount === 1 ? '' : 's'}. ¿Quieres eliminar la categoría y todos sus productos?`
+        : `La categoría "${getCategoryName(category)}" no tiene productos. ¿Quieres eliminarla?`;
+    categoryDeleteModal.hidden = false;
+    document.getElementById('adminCancelCategoryDelete')?.focus();
+}
+
+function closeCategoryDeleteModal() {
+    if (!categoryDeleteModal) return;
+    categoryDeleteModal.hidden = true;
+    pendingCategoryDeleteIndex = -1;
+}
+
+function deletePendingCategory() {
+    if (pendingCategoryDeleteIndex < 0) return;
+    adminMenu.categories.splice(pendingCategoryDeleteIndex, 1);
+    selectedCategoryIndex = Math.max(0, pendingCategoryDeleteIndex - 1);
+    selectedProductPage = 0;
+    closeCategoryDeleteModal();
+    renderCategorySelector();
+    saveData(true);
+}
+
 async function saveData(silent = false) {
     const language = languageSelect.value;
     const contentPath = language === 'en' ? 'data/content_en.json' : 'data/content.json';
@@ -330,9 +491,20 @@ async function saveData(silent = false) {
     if (window.firebaseDb) {
         try {
             const firebaseKey = path => path.includes('content_en') ? 'content-en' : path.includes('menu_en') ? 'menu-en' : path.includes('content') ? 'content-es' : 'menu-es';
+            const otherLanguage = language === 'en' ? 'es' : 'en';
+            const otherContentPath = otherLanguage === 'en' ? 'data/content_en.json' : 'data/content.json';
+            const otherMenuPath = otherLanguage === 'en' ? 'data/menu_en.json' : 'data/menu.json';
+            const otherContent = await loadAdminJson(otherContentPath, defaultContent);
+            const otherMenu = await loadAdminJson(otherMenuPath, defaultMenu);
+            syncSharedSocialLinks(adminContent, otherContent);
+            syncSharedDeliveryLinks(adminContent, otherContent);
+            syncSharedMenuPairFields(adminMenu, otherMenu, otherLanguage);
+            renderAdvancedEditors();
             await Promise.all([
                 window.firebaseDb.collection('siteData').doc(firebaseKey(contentPath)).set({ payload: adminContent, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() }),
-                window.firebaseDb.collection('siteData').doc(firebaseKey(menuPath)).set({ payload: adminMenu, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() })
+                window.firebaseDb.collection('siteData').doc(firebaseKey(otherContentPath)).set({ payload: otherContent, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() }),
+                window.firebaseDb.collection('siteData').doc(firebaseKey(menuPath)).set({ payload: adminMenu, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() }),
+                window.firebaseDb.collection('siteData').doc(firebaseKey(otherMenuPath)).set({ payload: otherMenu, updatedAt: window.firebase.firestore.FieldValue.serverTimestamp() })
             ]);
             setStatus('Cambios guardados en Firebase.', 'success');
             firebaseReachable = true;
@@ -354,10 +526,16 @@ async function loadEditors() {
     const language = languageSelect.value;
     const contentPath = language === 'en' ? 'data/content_en.json' : 'data/content.json';
     const menuPath = language === 'en' ? 'data/menu_en.json' : 'data/menu.json';
-    [adminContent, adminMenu] = await Promise.all([
+    const otherLanguage = language === 'en' ? 'es' : 'en';
+    const otherContentPath = otherLanguage === 'en' ? 'data/content_en.json' : 'data/content.json';
+    let otherContent;
+    [adminContent, adminMenu, otherContent] = await Promise.all([
         loadAdminJson(contentPath, defaultContent),
-        loadAdminJson(menuPath, defaultMenu)
+        loadAdminJson(menuPath, defaultMenu),
+        loadAdminJson(otherContentPath, defaultContent)
     ]);
+    syncSharedSocialLinks(adminContent, otherContent);
+    syncSharedDeliveryLinks(adminContent, otherContent);
     ensureDeliveryServices();
     syncContactPhoneLink();
     selectedCategoryIndex = 0;
@@ -481,6 +659,31 @@ if (!window.firebaseAuth) {
             selectedProductPage = Math.min(selectedProductPage, Math.max(0, Math.ceil(getProducts(getCategories()[selectedCategoryIndex]).length / PRODUCTS_PER_PAGE) - 1));
             renderCategoryEditor();
             saveData(true);
+            return;
+        }
+        const moveUpButton = event.target.closest('[data-move-product-up]');
+        if (moveUpButton) {
+            const products = getProducts(getCategories()[selectedCategoryIndex]);
+            const productIndex = Number(moveUpButton.dataset.moveProductUp);
+            if (productIndex > 0 && productIndex < products.length) {
+                [products[productIndex - 1], products[productIndex]] = [products[productIndex], products[productIndex - 1]];
+                selectedProductPage = Math.floor((productIndex - 1) / PRODUCTS_PER_PAGE);
+                renderCategoryEditor();
+                saveData(true);
+            }
+            return;
+        }
+        const moveDownButton = event.target.closest('[data-move-product-down]');
+        if (moveDownButton) {
+            const products = getProducts(getCategories()[selectedCategoryIndex]);
+            const productIndex = Number(moveDownButton.dataset.moveProductDown);
+            if (productIndex >= 0 && productIndex < products.length - 1) {
+                [products[productIndex], products[productIndex + 1]] = [products[productIndex + 1], products[productIndex]];
+                selectedProductPage = Math.floor((productIndex + 1) / PRODUCTS_PER_PAGE);
+                renderCategoryEditor();
+                saveData(true);
+            }
+            return;
         }
         if (event.target.closest('#adminAddProductButton')) {
             const category = getCategories()[selectedCategoryIndex];
@@ -496,6 +699,9 @@ if (!window.firebaseAuth) {
             selectedProductPage += pageButton.dataset.productPage === 'next' ? 1 : -1;
             renderCategoryEditor();
         }
+        if (event.target.closest('#adminDeleteCategoryButton')) {
+            openCategoryDeleteModal(selectedCategoryIndex);
+        }
     });
 
     document.getElementById('adminAddCategoryButton').addEventListener('click', () => {
@@ -505,6 +711,7 @@ if (!window.firebaseAuth) {
         selectedProductPage = 0;
         renderCategorySelector();
         categorySelect.focus();
+        saveData(true);
     });
 
     document.querySelectorAll('[data-content-field]').forEach(field => {
@@ -526,6 +733,12 @@ if (!window.firebaseAuth) {
         } catch (error) {
             setStatus(`JSON no válido: ${error.message}`);
         }
+    });
+
+    document.getElementById('adminCancelCategoryDelete').addEventListener('click', closeCategoryDeleteModal);
+    document.getElementById('adminConfirmCategoryDelete').addEventListener('click', deletePendingCategory);
+    categoryDeleteModal.addEventListener('click', event => {
+        if (event.target === categoryDeleteModal) closeCategoryDeleteModal();
     });
 
     document.getElementById('adminExportButton').addEventListener('click', () => {

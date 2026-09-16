@@ -3,9 +3,9 @@ const defaultMenu = {
 };
 
 const DEFAULT_DELIVERY_SERVICES = [
-    { key: 'just-eat', name: 'Just Eat', logoUrl: 'https://cdn.simpleicons.org/justeat', icon: 'fas fa-motorcycle', url: 'https://www.just-eat.es/' },
-    { key: 'uber-eats', name: 'Uber Eats', logoUrl: 'https://cdn.simpleicons.org/ubereats', icon: 'fab fa-uber', url: 'https://www.ubereats.com/es' },
-    { key: 'glovo', name: 'Glovo', logoUrl: 'https://cdn.simpleicons.org/glovo', icon: 'fas fa-bicycle', url: 'https://glovoapp.com/es/es/' }
+    { key: 'just-eat', name: 'Just Eat', logoUrl: 'https://cdn.simpleicons.org/justeat', icon: 'fas fa-motorcycle', url: '' },
+    { key: 'uber-eats', name: 'Uber Eats', logoUrl: 'https://cdn.simpleicons.org/ubereats', icon: 'fab fa-uber', url: '' },
+    { key: 'glovo', name: 'Glovo', logoUrl: 'https://cdn.simpleicons.org/glovo', icon: 'fas fa-bicycle', url: '' }
 ];
 
 const defaultContent = {
@@ -183,6 +183,45 @@ function buildSocialArray(redes) {
         });
 }
 
+function mergeSocialLinks(primaryContent, fallbackContent) {
+    const primary = Array.isArray(primaryContent?.footer?.social) ? primaryContent.footer.social : [];
+    const fallback = Array.isArray(fallbackContent?.footer?.social) ? fallbackContent.footer.social : [];
+    const keys = [...new Set([...primary, ...fallback].map(link => link.key || link.name?.toLowerCase()).filter(Boolean))];
+
+    return keys.map(key => {
+        const primaryLink = primary.find(link => (link.key || link.name?.toLowerCase()) === key);
+        const fallbackLink = fallback.find(link => (link.key || link.name?.toLowerCase()) === key) || {};
+        const preferred = primaryLink || fallbackLink;
+        return {
+            ...fallbackLink,
+            ...primaryLink,
+            name: preferred.name || primaryLink.name || fallbackLink.name || key,
+            icon: preferred.icon || primaryLink.icon || fallbackLink.icon || '',
+            color: preferred.color || primaryLink.color || fallbackLink.color || '',
+            url: preferred.url || ''
+        };
+    });
+}
+
+function mergeDeliveryServices(primaryContent, fallbackContent) {
+    const primary = Array.isArray(primaryContent?.contact?.deliveryServices) ? primaryContent.contact.deliveryServices : [];
+    const fallback = Array.isArray(fallbackContent?.contact?.deliveryServices) ? fallbackContent.contact.deliveryServices : [];
+    return DEFAULT_DELIVERY_SERVICES.map(defaultService => {
+        const primaryService = primary.find(service => service.key === defaultService.key || service.name?.toLowerCase() === defaultService.name.toLowerCase());
+        const fallbackService = fallback.find(service => service.key === defaultService.key || service.name?.toLowerCase() === defaultService.name.toLowerCase()) || {};
+        const preferred = primaryService || fallbackService;
+        return {
+            ...defaultService,
+            ...fallbackService,
+            ...primaryService,
+            key: defaultService.key,
+            name: defaultService.name,
+            logoUrl: defaultService.logoUrl,
+            url: preferred.url || ''
+        };
+    });
+}
+
 function updatePageMetadata(contentData) {
     const titleText = contentData.pageTitle || contentData.brand?.companyName || contentData.nombreBar || 'Carta Digital';
     const titleEl = document.getElementById('meta-title');
@@ -259,6 +298,12 @@ async function init() {
     const rawMenuData = await loadJson(menuPath, defaultMenu);
     const menuData = normalizeMenu(rawMenuData);
     const rawContent = await loadJson(contentPath, defaultContent);
+    const alternateContentPath = currentLang === 'en' ? 'data/content.json' : 'data/content_en.json';
+    const alternateContent = await loadJson(alternateContentPath, defaultContent);
+    rawContent.footer ||= {};
+    rawContent.footer.social = mergeSocialLinks(rawContent, alternateContent);
+    rawContent.contact ||= {};
+    rawContent.contact.deliveryServices = mergeDeliveryServices(rawContent, alternateContent);
     const contentData = normalizeContent(rawContent);
 
     const titleText = contentData.pageTitle || contentData.brand?.companyName || contentData.nombreBar || 'Carta Digital';
@@ -319,6 +364,12 @@ async function loadMenuForLang(lang) {
     const raw = await loadJson(menuPath, defaultMenu);
     const menuData = normalizeMenu(raw);
     const rawContent = await loadJson(contentPath, defaultContent);
+    const alternateContentPath = currentLang === 'en' ? 'data/content.json' : 'data/content_en.json';
+    const alternateContent = await loadJson(alternateContentPath, defaultContent);
+    rawContent.footer ||= {};
+    rawContent.footer.social = mergeSocialLinks(rawContent, alternateContent);
+    rawContent.contact ||= {};
+    rawContent.contact.deliveryServices = mergeDeliveryServices(rawContent, alternateContent);
     const contentData = normalizeContent(rawContent);
     renderMenu(menuData.categories, contentData);
 
