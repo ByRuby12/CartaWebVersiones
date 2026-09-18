@@ -464,14 +464,14 @@ function normalizeContent(content) {
                         return { ...defaultService, ...service, logoUrl: service.logoUrl || defaultService.logoUrl || '' };
                     }),
             labels: {
-                address: contact.labels?.address || contact.labels?.direccion || 'Dirección',
-                hours: contact.labels?.hours || contact.labels?.horario || 'Horario',
-                email: contact.labels?.email || contact.labels?.correo || 'Correo',
+                address: contact.labels?.address || contact.labels?.direccion || (currentLang === 'en' ? 'Address' : 'Dirección'),
+                hours: contact.labels?.hours || contact.labels?.horario || (currentLang === 'en' ? 'Opening hours' : 'Horario'),
+                email: contact.labels?.email || contact.labels?.correo || (currentLang === 'en' ? 'Email' : 'Correo'),
                 services: contact.labels?.services || contact.labels?.servicios || (currentLang === 'en' ? 'Services' : 'Servicios')
             },
             buttons: {
-                review: contact.buttons?.review || contact.buttons?.reseña,
-                book: contact.buttons?.book || contact.buttons?.reservar
+                review: contact.buttons?.review || contact.buttons?.reseña || (currentLang === 'en' ? 'Rate us now' : 'Califícanos ahora'),
+                book: contact.buttons?.book || contact.buttons?.reservar || (currentLang === 'en' ? 'Contact now' : 'Contactar ahora')
             }
         },
         home: {
