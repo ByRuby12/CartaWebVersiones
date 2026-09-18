@@ -23,8 +23,8 @@
   },
   "servicios": {
     "justEat": "https://www.just-eat.es/",
-    "uberEats": "",
-    "glovo": ""
+    "uberEats": "https://www.ubereats.com/es/",
+    "glovo": "https://glovoapp.com/es/"
   },
   "colores": {
     "letras-pagina-web": "'Montserrat', 'Poppins', 'Oswald', 'Raleway', 'Ubuntu', sans-serif",
