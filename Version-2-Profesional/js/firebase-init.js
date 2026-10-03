@@ -1,11 +1,12 @@
 (function initializeFirebase() {
     const firebaseConfig = {
-        apiKey: 'AIzaSyD1C9BrRChpQp0GSD1yl34tazQnkYQk3SA',
-        authDomain: 'procesador-textos.firebaseapp.com',
-        projectId: 'procesador-textos',
-        storageBucket: 'procesador-textos.firebasestorage.app',
-        messagingSenderId: '342518347690',
-        appId: '1:342518347690:web:1b5ffef5e755b242061dd3'
+        apiKey: 'AIzaSyBewHxHbq40hiL_8hichZY_e_NzNdmk1Wk',
+        authDomain: 'latortilleria.firebaseapp.com',
+        projectId: 'latortilleria',
+        storageBucket: 'latortilleria.firebasestorage.app',
+        messagingSenderId: '648939093516',
+        appId: '1:648939093516:web:b250d41c13496d08993829',
+        measurementId: 'G-RKSN0M9D67'
     };
 
     if (!window.firebase || window.firebase.apps.length) return;

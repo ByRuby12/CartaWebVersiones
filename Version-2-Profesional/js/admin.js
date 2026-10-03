@@ -1,5 +1,6 @@
 const defaultMenu = { categories: [] };
 const defaultContent = { brand: {}, contact: {}, footer: {} };
+const DEFAULT_PRODUCT_IMAGE = 'images/proximamente.png';
 const ALLERGEN_OPTIONS = [
     ['gluten', 'Gluten'],
     ['lacteos', 'Lácteos'],
@@ -25,7 +26,7 @@ const MANAGED_LINKS = {
         { key: 'whatsapp', name: 'WhatsApp', icon: 'fab fa-whatsapp', color: '#25D366' }
     ],
     delivery: [
-        { key: 'just-eat', name: 'Just Eat', logoUrl: 'https://cdn.simpleicons.org/justeat', icon: 'fas fa-motorcycle', url: '' },
+        { key: 'just-eat', name: 'Just Eat', logoUrl: 'https://cdn.simpleicons.org/justeat', icon: 'fas fa-motorcycle', url: 'https://www.just-eat.es/restaurants-la-tortilleria-14-madrid/menu' },
         { key: 'uber-eats', name: 'Uber Eats', logoUrl: 'https://cdn.simpleicons.org/ubereats', icon: 'fab fa-uber', url: '' },
         { key: 'glovo', name: 'Glovo', logoUrl: 'https://cdn.simpleicons.org/glovo', icon: 'fas fa-bicycle', url: '' }
     ]
@@ -151,6 +152,15 @@ function syncSharedDeliveryLinks(firstContent, secondContent) {
     secondContent.contact.deliveryServices = merged.map(service => ({ ...service }));
 }
 
+function syncSharedLogoPaths(sourceContent, targetContent) {
+    const sourceBrand = sourceContent.brand || sourceContent.marca || {};
+    const sourceContact = sourceContent.contact || sourceContent.contacto || {};
+    targetContent.brand ||= {};
+    targetContent.contact ||= {};
+    targetContent.brand.logoImage = sourceBrand.logoImage ?? sourceBrand.logoImagen ?? sourceContent.logo ?? '';
+    targetContent.contact.logoImage = sourceContact.logoImage ?? sourceContact.logoImagen ?? '';
+}
+
 function getCategories() {
     return Array.isArray(adminMenu.categories) ? adminMenu.categories : [];
 }
@@ -173,7 +183,7 @@ function copySharedProductFields(sourceProduct, targetProduct) {
     const sourceImage = getProductValue(sourceProduct, 'image');
     const targetImage = getProductValue(targetProduct, 'image');
     setProductValue(targetProduct, 'price', sourcePrice || targetPrice);
-    setProductValue(targetProduct, 'image', sourceImage || targetImage);
+    setProductValue(targetProduct, 'image', sourceImage || targetImage || DEFAULT_PRODUCT_IMAGE);
 
     const allergens = getProductAllergens(sourceProduct);
     const targetAllergens = getProductAllergens(targetProduct);
@@ -213,7 +223,7 @@ function syncSharedMenuFields(sourceMenu, targetMenu, targetLanguage) {
                     nombre: '',
                     descripcion: '',
                     precio: '',
-                    imagen: '',
+                    imagen: DEFAULT_PRODUCT_IMAGE,
                     alergenos: []
                 };
                 if (Array.isArray(targetCategory.productos)) targetCategory.productos.push(targetProduct);
@@ -484,7 +494,12 @@ async function saveData(silent = false) {
     const menuPath = language === 'en' ? 'data/menu_en.json' : 'data/menu.json';
     renderAdvancedEditors();
     if (silent) {
+        clearTimeout(cloudSaveTimer);
         setStatus('Cambios pendientes de guardar.', 'pending');
+        cloudSaveTimer = setTimeout(() => {
+            cloudSaveTimer = null;
+            saveData(false);
+        }, 800);
         return;
     }
 
@@ -498,6 +513,7 @@ async function saveData(silent = false) {
             const otherMenu = await loadAdminJson(otherMenuPath, defaultMenu);
             syncSharedSocialLinks(adminContent, otherContent);
             syncSharedDeliveryLinks(adminContent, otherContent);
+            syncSharedLogoPaths(adminContent, otherContent);
             syncSharedMenuPairFields(adminMenu, otherMenu, otherLanguage);
             renderAdvancedEditors();
             await Promise.all([
@@ -689,7 +705,7 @@ if (!window.firebaseAuth) {
             const category = getCategories()[selectedCategoryIndex];
             const products = getProducts(category);
             if (!Array.isArray(category.productos)) category.productos = products;
-            category.productos.push({ nombre: 'Nuevo producto', descripcion: '', precio: '0.00', alergenos: ['free-alergenos'], imagen: '' });
+            category.productos.push({ nombre: 'Nuevo producto', descripcion: '', precio: '0.00', alergenos: ['free-alergenos'], imagen: DEFAULT_PRODUCT_IMAGE });
             selectedProductPage = Math.ceil(products.length / PRODUCTS_PER_PAGE) - 1;
             renderCategoryEditor();
             saveData(true);

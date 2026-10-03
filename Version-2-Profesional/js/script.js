@@ -8,6 +8,17 @@ const DEFAULT_DELIVERY_SERVICES = [
     { key: 'glovo', name: 'Glovo', logoUrl: 'https://cdn.simpleicons.org/glovo', icon: 'fas fa-bicycle', url: '' }
 ];
 
+const DEFAULT_BRAND_ASSETS = {
+    banner: 'images/banner-bar.jpeg',
+    logo: 'images/logo-bar.png',
+    icon: 'images/icono_web.png'
+};
+
+const DEFAULT_CONTACT_LABELS = {
+    es: { address: 'Dirección', hours: 'Horario', email: 'Correo' },
+    en: { address: 'Address', hours: 'Hours', email: 'Email' }
+};
+
 const defaultContent = {
     brand: {
         logo: '',
@@ -186,6 +197,28 @@ function buildSocialArray(redes) {
 function mergeSocialLinks(primaryContent, fallbackContent) {
     const primary = Array.isArray(primaryContent?.footer?.social) ? primaryContent.footer.social : [];
     const fallback = Array.isArray(fallbackContent?.footer?.social) ? fallbackContent.footer.social : [];
+
+    const whatsappLink = {
+        key: 'whatsapp',
+        name: 'WhatsApp',
+        icon: 'fab fa-whatsapp',
+        color: '#25D366',
+        url: 'https://whatsapp.com/channel/0029Vb88l23H5JLuUhmLIO01'
+    };
+
+    const allLinks = [...primary, ...fallback];
+    const hasWhatsapp = allLinks.some(link => (link.key || link.name?.toLowerCase()) === 'whatsapp');
+
+    if (!hasWhatsapp) {
+        fallback.push(whatsappLink);
+    } else {
+        const primaryIndex = primary.findIndex(link => (link.key || link.name?.toLowerCase()) === 'whatsapp');
+        if (primaryIndex >= 0) primary[primaryIndex] = { ...primary[primaryIndex], ...whatsappLink };
+
+        const fallbackIndex = fallback.findIndex(link => (link.key || link.name?.toLowerCase()) === 'whatsapp');
+        if (fallbackIndex >= 0) fallback[fallbackIndex] = { ...fallback[fallbackIndex], ...whatsappLink };
+    }
+
     const keys = [...new Set([...primary, ...fallback].map(link => link.key || link.name?.toLowerCase()).filter(Boolean))];
 
     return keys.map(key => {
@@ -425,19 +458,20 @@ function normalizeContent(content) {
     const contact = content.contact || content.contacto || {};
     const home = content.home || content.inicio || {};
     const footer = content.footer || content.pie || {};
+    const contactLabels = DEFAULT_CONTACT_LABELS[currentLang] || DEFAULT_CONTACT_LABELS.es;
 
     return {
         pageTitle: content.pageTitle || content.tituloPagina || content.nombreBar || '',
         pageDescription: content.pageDescription || content.descripcionPagina || content.description || content.descripcion || '',
         keywords: content.keywords || '',
         author: content.author || content.autor || content.desarrollador || content.developer || '',
-        favicon: content.favicon || content.iconoFavicon || contact.iconoFavicon || brand.iconImage || '',
+        favicon: content.favicon || content.iconoFavicon || contact.iconoFavicon || brand.iconImage || DEFAULT_BRAND_ASSETS.icon,
         brand: {
-            logoImage: content.logo || brand.logoImage || brand.logoImagen,
-            iconImage: content.iconoFavicon || brand.iconImage || brand.logoIcon || brand.logoImagen || '',
+            logoImage: content.logo || brand.logoImage || brand.logoImagen || DEFAULT_BRAND_ASSETS.logo,
+            iconImage: content.iconoFavicon || brand.iconImage || brand.logoIcon || brand.logoImagen || DEFAULT_BRAND_ASSETS.icon,
             companyName: content.nombreBar || brand.companyName || brand.nombreEmpresa,
             location: content.direccion || brand.location || brand.ubicacion,
-            heroImage: content.banner || brand.heroImage || brand.imagenHero,
+            heroImage: content.banner || brand.heroImage || brand.imagenHero || DEFAULT_BRAND_ASSETS.banner,
             heroEyebrow: brand.heroEyebrow || brand.subtituloHero,
             heroTitle: content.pageTitle || content.tituloPagina || brand.heroTitle || brand.tituloHero,
             heroText: content.descripcion || content.pageDescription || brand.heroText || brand.textoHero,
@@ -446,7 +480,7 @@ function normalizeContent(content) {
         contact: {
             heading: contact.heading || contact.encabezado,
             description: contact.description || contact.descripcion,
-            logoImage: contact.logoImage || contact.logoImagen || content.logo || '',
+            logoImage: contact.logoImage || contact.logoImagen || content.logo || brand.logoImage || brand.logoImagen || DEFAULT_BRAND_ASSETS.logo,
             companyName: contact.companyName || contact.nombreEmpresa || content.nombreBar,
             address: contact.address || contact.direccion || content.direccion,
             hours: contact.hours || contact.horario || content.horario,
@@ -464,14 +498,14 @@ function normalizeContent(content) {
                         return { ...defaultService, ...service, logoUrl: service.logoUrl || defaultService.logoUrl || '' };
                     }),
             labels: {
-                address: contact.labels?.address || contact.labels?.direccion || (currentLang === 'en' ? 'Address' : 'Dirección'),
-                hours: contact.labels?.hours || contact.labels?.horario || (currentLang === 'en' ? 'Opening hours' : 'Horario'),
-                email: contact.labels?.email || contact.labels?.correo || (currentLang === 'en' ? 'Email' : 'Correo'),
+                address: contactLabels.address,
+                hours: contactLabels.hours,
+                email: contactLabels.email,
                 services: contact.labels?.services || contact.labels?.servicios || (currentLang === 'en' ? 'Services' : 'Servicios')
             },
             buttons: {
-                review: contact.buttons?.review || contact.buttons?.reseña || (currentLang === 'en' ? 'Rate us now' : 'Califícanos ahora'),
-                book: contact.buttons?.book || contact.buttons?.reservar || (currentLang === 'en' ? 'Contact now' : 'Contactar ahora')
+                review: contact.buttons?.review || contact.buttons?.reseña || (currentLang === 'en' ? 'Review us now' : 'Califícanos ahora'),
+                book: contact.buttons?.book || contact.buttons?.reservar || (currentLang === 'en' ? 'Contact us now' : 'Contáctanos ahora')
             }
         },
         home: {
@@ -600,11 +634,12 @@ function renderMenu(categories, content) {
 
                 const itemImage = normalizeAssetPath(item.image);
                 const shouldUseImage = shouldRenderProductImage(itemImage);
+                const hasMultiplePrices = String(item.price ?? '').includes('/');
                 const imageClass = shouldUseImage ? 'product-image lazy-image' : 'product-image product-image-placeholder';
                 card.innerHTML = `
                     <div class="${imageClass}"${shouldUseImage ? ` data-src="${itemImage}"` : ''}></div>
                     <div class="product-info">
-                        <div class="product-header">
+                        <div class="product-header ${hasMultiplePrices ? 'product-header-multiple' : ''}">
                             <h3 class="product-title">${item.name}</h3>
                             <span class="product-price">${formatProductPrice(item.price)}</span>
                         </div>

@@ -1,0 +1,24 @@
+name: Copy La Tortilleria placeholder image
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  copy-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy image from La Tortilleria
+        run: |
+          mkdir -p Version-2-Profesional/images
+          curl -L --fail --retry 3 "https://raw.githubusercontent.com/ByRuby12/LaTortilleria/main/images/proximamente.png" -o Version-2-Profesional/images/proximamente.png
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Version-2-Profesional/images/proximamente.png
+          git commit -m "Copiar proximamente.png de La Tortilleria" || exit 0
+          git push
+          
